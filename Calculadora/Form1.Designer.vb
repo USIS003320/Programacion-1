@@ -35,12 +35,13 @@ Partial Class Form1
         Me.optPorcentaje = New System.Windows.Forms.RadioButton()
         Me.optExponenciacion = New System.Windows.Forms.RadioButton()
         Me.optResiduo = New System.Windows.Forms.RadioButton()
+        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblnum1
         '
         Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(175, 60)
+        Me.lblnum1.Location = New System.Drawing.Point(9, 56)
         Me.lblnum1.Name = "lblnum1"
         Me.lblnum1.Size = New System.Drawing.Size(41, 13)
         Me.lblnum1.TabIndex = 0
@@ -50,7 +51,7 @@ Partial Class Form1
         'lblnum2
         '
         Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(381, 60)
+        Me.lblnum2.Location = New System.Drawing.Point(217, 56)
         Me.lblnum2.Name = "lblnum2"
         Me.lblnum2.Size = New System.Drawing.Size(41, 13)
         Me.lblnum2.TabIndex = 1
@@ -58,7 +59,7 @@ Partial Class Form1
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(289, 211)
+        Me.btnCalcular.Location = New System.Drawing.Point(125, 207)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
         Me.btnCalcular.TabIndex = 2
@@ -68,7 +69,7 @@ Partial Class Form1
         'lblrespuesta
         '
         Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(508, 60)
+        Me.lblrespuesta.Location = New System.Drawing.Point(344, 56)
         Me.lblrespuesta.Name = "lblrespuesta"
         Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
         Me.lblrespuesta.TabIndex = 3
@@ -76,14 +77,14 @@ Partial Class Form1
         '
         'txtnum1
         '
-        Me.txtnum1.Location = New System.Drawing.Point(220, 57)
+        Me.txtnum1.Location = New System.Drawing.Point(56, 53)
         Me.txtnum1.Name = "txtnum1"
         Me.txtnum1.Size = New System.Drawing.Size(46, 20)
         Me.txtnum1.TabIndex = 4
         '
         'txtnum2
         '
-        Me.txtnum2.Location = New System.Drawing.Point(426, 57)
+        Me.txtnum2.Location = New System.Drawing.Point(262, 53)
         Me.txtnum2.Name = "txtnum2"
         Me.txtnum2.Size = New System.Drawing.Size(48, 20)
         Me.txtnum2.TabIndex = 5
@@ -91,7 +92,7 @@ Partial Class Form1
         'optSuma
         '
         Me.optSuma.AutoSize = True
-        Me.optSuma.Location = New System.Drawing.Point(271, 36)
+        Me.optSuma.Location = New System.Drawing.Point(107, 32)
         Me.optSuma.Name = "optSuma"
         Me.optSuma.Size = New System.Drawing.Size(31, 17)
         Me.optSuma.TabIndex = 6
@@ -102,7 +103,7 @@ Partial Class Form1
         'optResta
         '
         Me.optResta.AutoSize = True
-        Me.optResta.Location = New System.Drawing.Point(271, 60)
+        Me.optResta.Location = New System.Drawing.Point(107, 56)
         Me.optResta.Name = "optResta"
         Me.optResta.Size = New System.Drawing.Size(28, 17)
         Me.optResta.TabIndex = 7
@@ -113,7 +114,7 @@ Partial Class Form1
         'optMultiplicar
         '
         Me.optMultiplicar.AutoSize = True
-        Me.optMultiplicar.Location = New System.Drawing.Point(271, 83)
+        Me.optMultiplicar.Location = New System.Drawing.Point(107, 79)
         Me.optMultiplicar.Name = "optMultiplicar"
         Me.optMultiplicar.Size = New System.Drawing.Size(29, 17)
         Me.optMultiplicar.TabIndex = 8
@@ -124,7 +125,7 @@ Partial Class Form1
         'optDivision
         '
         Me.optDivision.AutoSize = True
-        Me.optDivision.Location = New System.Drawing.Point(271, 107)
+        Me.optDivision.Location = New System.Drawing.Point(107, 103)
         Me.optDivision.Name = "optDivision"
         Me.optDivision.Size = New System.Drawing.Size(30, 17)
         Me.optDivision.TabIndex = 9
@@ -135,7 +136,7 @@ Partial Class Form1
         'optPorcentaje
         '
         Me.optPorcentaje.AutoSize = True
-        Me.optPorcentaje.Location = New System.Drawing.Point(271, 131)
+        Me.optPorcentaje.Location = New System.Drawing.Point(107, 127)
         Me.optPorcentaje.Name = "optPorcentaje"
         Me.optPorcentaje.Size = New System.Drawing.Size(75, 17)
         Me.optPorcentaje.TabIndex = 10
@@ -146,7 +147,7 @@ Partial Class Form1
         'optExponenciacion
         '
         Me.optExponenciacion.AutoSize = True
-        Me.optExponenciacion.Location = New System.Drawing.Point(271, 155)
+        Me.optExponenciacion.Location = New System.Drawing.Point(107, 151)
         Me.optExponenciacion.Name = "optExponenciacion"
         Me.optExponenciacion.Size = New System.Drawing.Size(31, 17)
         Me.optExponenciacion.TabIndex = 11
@@ -158,7 +159,7 @@ Partial Class Form1
         'optResiduo
         '
         Me.optResiduo.AutoSize = True
-        Me.optResiduo.Location = New System.Drawing.Point(271, 179)
+        Me.optResiduo.Location = New System.Drawing.Point(107, 175)
         Me.optResiduo.Name = "optResiduo"
         Me.optResiduo.Size = New System.Drawing.Size(59, 17)
         Me.optResiduo.TabIndex = 12
@@ -166,11 +167,22 @@ Partial Class Form1
         Me.optResiduo.Text = "residuo"
         Me.optResiduo.UseVisualStyleBackColor = True
         '
+        'cboOperaciones
+        '
+        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboOperaciones.FormattingEnabled = True
+        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Suma", "Resta", "Multiplicacion", "Division"})
+        Me.cboOperaciones.Location = New System.Drawing.Point(292, 151)
+        Me.cboOperaciones.Name = "cboOperaciones"
+        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
+        Me.cboOperaciones.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(435, 262)
+        Me.Controls.Add(Me.cboOperaciones)
         Me.Controls.Add(Me.optResiduo)
         Me.Controls.Add(Me.optExponenciacion)
         Me.Controls.Add(Me.optPorcentaje)
@@ -204,4 +216,5 @@ Partial Class Form1
     Friend WithEvents optPorcentaje As RadioButton
     Friend WithEvents optExponenciacion As RadioButton
     Friend WithEvents optResiduo As RadioButton
+    Friend WithEvents cboOperaciones As ComboBox
 End Class
