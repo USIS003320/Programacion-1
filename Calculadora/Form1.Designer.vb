@@ -77,7 +77,7 @@ Partial Class Form1
         '
         'txtnum1
         '
-        Me.txtnum1.Location = New System.Drawing.Point(56, 53)
+        Me.txtnum1.Location = New System.Drawing.Point(55, 49)
         Me.txtnum1.Name = "txtnum1"
         Me.txtnum1.Size = New System.Drawing.Size(46, 20)
         Me.txtnum1.TabIndex = 4

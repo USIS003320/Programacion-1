@@ -49,3 +49,4 @@
                 lblrespuesta.Text = num1 / num2
         End Select
     End Sub
+End Class
