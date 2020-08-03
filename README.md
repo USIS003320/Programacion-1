@@ -1,2 +1,2 @@
-# Programacion 1
+# Proyecto-1
 Calculadora
