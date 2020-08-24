@@ -554,4 +554,650 @@
         End If
 
     End Sub
+
+    Private Sub StatusStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
+
+    End Sub
+
+    Private Sub btnCalcular2_Click(sender As Object, e As EventArgs) Handles btnCalcular2.Click
+        If cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 9.8
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10000
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 35274
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000000
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1.102
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 100000000
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000000000
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Tonelada" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 2205
+            lblNum3.Text = "lb"
+        End If
+        If cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.102
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 101.97
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1019.72
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 3278.46
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 101971.6
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.1124
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10197160.05
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 101971600.5
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Kilonewton" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 224.81
+            lblNum3.Text = "lb"
+        End If
+        If cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.91
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 8.9
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 907.18
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 9071.85
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 29166.67
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 907184.74
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 90718474
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 907184740
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Tonelada cortas" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 2000
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10 ^ -3
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.01
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 32.15
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0011
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 100000
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000000
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Kilogramo" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 2.2
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10 ^ -4
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000981
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.1
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 3.22
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 100
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.00011
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10000
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 100000
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Hectogramo" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.22
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000286
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000278
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.03
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.28
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 28.35
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000313
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 2834.95
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 28349.52
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Onza" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.06
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000001
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.00000981
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.001
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.01
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.03
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000011
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 100
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1000
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Gramo" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0022
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000001
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 9.81 * 10 ^ -8
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.00001
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0001
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000322
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.01
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1.1 * 10 ^ -8
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Centigramo" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000022
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 10 ^ -9
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 9.81 * 10 ^ -9
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000001
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.00001
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000322
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.001
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 1.1 * 10 ^ -9
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.1
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Miligramo" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0000022
+            lblNum3.Text = "lb"
+        End If
+
+        If cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Tonelada" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.000454
+            lblNum3.Text = "t"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Kilonewton" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.00445
+            lblNum3.Text = "kN"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Kilogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.45
+            lblNum3.Text = "kg"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Hectogramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 4.54
+            lblNum3.Text = "hg"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Onza" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 14.58
+            lblNum3.Text = "oz"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Gramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 453.59
+            lblNum3.Text = "g"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Toneladas cortas" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 0.0005
+            lblNum3.Text = "Tm"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Centigramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 45359.24
+            lblNum3.Text = "cg"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Miligramo" Then
+            lblRespuesta2.Text = Val(txtNum3.Text) * 453592.37
+            lblNum3.Text = "mg"
+        ElseIf cbxEntrada3.Text = "Libra" And cbxSalida3.Text = "Libra" Then
+            lblRespuesta2.Text = Val(txtNum3.Text)
+            lblNum3.Text = "lb"
+        End If
+    End Sub
+
+    Private Sub btnCalcular3_Click(sender As Object, e As EventArgs) Handles btnCalcular3.Click
+        If cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1000
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10000
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100000
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100000
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.86
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Hectolitro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 22.7
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1000
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10000
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10000
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.09
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Decalitro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 2.27
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1000
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10000
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Decimetro cubico" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.23
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1000
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10000
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Litro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.23
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.001
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 100
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 8.65 * 10 ^ -4
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Decilitro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.02
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -4
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -3
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 8.65 * 10 ^ -5
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Centilitro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 2.27 * 10 ^ -3
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -5
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -4
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -3
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -3
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 8.65 * 10 ^ -6
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Centimetro cubico" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 2.27 * 10 ^ -4
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -5
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -4
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -3
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 10 ^ -3
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.01
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.1
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 8.65 * 10 ^ -6
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Mililitro" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 2.27 * 10 ^ -4
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1.64
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 16.36
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 163.65
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 163.65
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 1636.5
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 16365
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 163650
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 163650
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Barril" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 37.15
+            lblNum4.Text = "gal"
+        End If
+
+        If cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Hectolitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.05
+            lblNum4.Text = "hl"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Decalitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.45
+            lblNum4.Text = "dal"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Decimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 4.55
+            lblNum4.Text = "dm3"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Litro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 4.55
+            lblNum4.Text = "l"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Decilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 45.46
+            lblNum4.Text = "dl"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Centilitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 454.61
+            lblNum4.Text = "cl"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Centimetro cubico" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 4546.1
+            lblNum4.Text = "cc"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Mililitro" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 4546.1
+            lblNum4.Text = "ml"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Barril" Then
+            lblRespuesta3.Text = Val(txtNum4.Text) * 0.04
+            lblNum4.Text = "bl"
+        ElseIf cbxEntrada4.Text = "Galon" And cbxSalida4.Text = "Galon" Then
+            lblRespuesta3.Text = Val(txtNum4.Text)
+            lblNum4.Text = "gal"
+        End If
+    End Sub
 End Class
