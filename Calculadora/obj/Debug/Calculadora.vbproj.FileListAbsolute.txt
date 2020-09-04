@@ -22,3 +22,15 @@ C:\Users\famil\Source\Repos\Programacion-1\Calculadora\obj\Debug\Calculadora.vbp
 C:\Users\famil\Source\Repos\Programacion-1\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\famil\Source\Repos\Programacion-1\Calculadora\obj\Debug\Calculadora.xml
 C:\Users\famil\Source\Repos\Programacion-1\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\famil\Source\Repos\Program\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\famil\Source\Repos\Program\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\famil\Source\Repos\Program\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\famil\Source\Repos\Program\Calculadora\bin\Debug\Calculadora.xml
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.vbprojAssemblyReference.cache
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.Resources.resources
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.vbproj.GenerateResource.cache
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.vbproj.CoreCompileInputs.cache
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.xml
+C:\Users\famil\Source\Repos\Program\Calculadora\obj\Debug\Calculadora.pdb
