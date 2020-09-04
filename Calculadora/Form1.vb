@@ -1,52 +1,25 @@
 ﻿Public Class Form1
-    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        Dim num1, num2, respuesta As Double
-
-        num1 = txtnum1.Text
-        num2 = txtnum2.Text
-
-        If optSuma.Checked Then
-            lblrespuesta.Text = num1 + num2
-        End If
-
-
-        If optResta.Checked Then
-            lblrespuesta.Text = num1 - num2
-        End If
-
-
-        If optMultiplicar.Checked Then
-            lblrespuesta.Text = num1 * num2
-        End If
-
-        If optDivision.Checked Then
-            lblrespuesta.Text = num1 / num2
-        End If
-
-        If optPorcentaje.Checked Then
-            lblrespuesta.Text = num1 * num2 / 100
-        End If
-
-        If optExponenciacion.Checked Then
-            lblrespuesta.Text = num1 ^ num2
-        End If
-
-        If optResiduo.Checked Then
-            lblrespuesta.Text = num1 Mod num2
-        End If
-
-        Select Case cboOperaciones.SelectedIndex
-            Case 1
-                lblrespuesta.Text = num1 + num2
-
-            Case 2
-                lblrespuesta.Text = num1 - num2
-
-            Case 3
-                lblrespuesta.Text = num1 * num2
-
-            Case 4
-                lblrespuesta.Text = num1 / num2
-        End Select
+    Dim objdirecciones = New direcciones()
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cboDepto.Items.AddRange(objdirecciones.depto)
     End Sub
-End class
+
+    Private Sub cboDepto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboDepto.SelectedIndexChanged
+        cboMun.Items.Clear()
+        cboMun.Text = ""
+        cboMun.Items.AddRange(objdirecciones.mun(cboDepto.SelectedIndex))
+    End Sub
+End Class
+
+Class direcciones
+    Public depto() As String = {"Seleccione un depto.", "Usulutan", "San Miguel", "La Union", "Morazan"}
+    Public mun()() As String = {
+        New String() {"Seleccione un depto."},
+        New String() {"Seleccione un municipio", "Usulutan", "Jiquilisco", "Santa Elena", "Santa Maria"},    '0->Usulutan
+        New String() {"Seleccione un municipio", "San Miguel", "El Transito", "San Rafael Ote", "San Jorge"},'1->San Miguel
+        New String() {"Seleccione un municipio", "La Union", "SRL", "Anamoros", "Bolivar"},                  '2->La Union
+        New String() {"Seleccione un municipio", "Arambala", "Perquin", "Corinto", "Cacaopera"},              '3->Morazan
+        New String() {"Seleccione un municipio", "San Salvador"}
+    }
+End Class
+
