@@ -107,7 +107,9 @@
 
         respuesta = txtrespuesta2.Text
         unidad = txtUnidades.Text
-        cantidad = txtCantidad2.Tex
+        cantidad = txtCantidad2.Text
+
+        txtrespuesta2.Text = (cantidad \ unidad).ToString() + "/" + (cantidad Mod unidad).ToString()
 
     End Sub
 End class
