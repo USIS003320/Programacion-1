@@ -102,4 +102,12 @@
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim respuesta, unidad, cantidad As String
+
+        respuesta = txtrespuesta2.Text
+        unidad = txtUnidades.Text
+        cantidad = txtCantidad2.Tex
+
+    End Sub
 End class
