@@ -22,155 +22,138 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.lblA = New System.Windows.Forms.Label()
-        Me.lblDe = New System.Windows.Forms.Label()
-        Me.btnConvertir = New System.Windows.Forms.Button()
-        Me.txtCantidad = New System.Windows.Forms.TextBox()
-        Me.lblRespuesta = New System.Windows.Forms.Label()
-        Me.lblCantidad = New System.Windows.Forms.Label()
-        Me.cbxEntrada = New System.Windows.Forms.ComboBox()
-        Me.cbxSalida = New System.Windows.Forms.ComboBox()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
+        Me.lbltipo = New System.Windows.Forms.Label()
+        Me.btnconvertir = New System.Windows.Forms.Button()
+        Me.lblde = New System.Windows.Forms.Label()
+        Me.lbla = New System.Windows.Forms.Label()
+        Me.lblcantidad = New System.Windows.Forms.Label()
+        Me.cbotipo = New System.Windows.Forms.ComboBox()
+        Me.lblrespuesta = New System.Windows.Forms.Label()
+        Me.cbode = New System.Windows.Forms.ComboBox()
+        Me.cboa = New System.Windows.Forms.ComboBox()
+        Me.txtcantidad = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'TabControl1
+        'lbltipo
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(31, 22)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(472, 300)
-        Me.TabControl1.TabIndex = 0
+        Me.lbltipo.AutoSize = True
+        Me.lbltipo.Location = New System.Drawing.Point(157, 30)
+        Me.lbltipo.Name = "lbltipo"
+        Me.lbltipo.Size = New System.Drawing.Size(31, 13)
+        Me.lbltipo.TabIndex = 0
+        Me.lbltipo.Text = "Tipo:"
         '
-        'TabPage1
+        'btnconvertir
         '
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(464, 274)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Conversor 1"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.btnconvertir.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnconvertir.Location = New System.Drawing.Point(128, 242)
+        Me.btnconvertir.Name = "btnconvertir"
+        Me.btnconvertir.Size = New System.Drawing.Size(170, 38)
+        Me.btnconvertir.TabIndex = 1
+        Me.btnconvertir.Text = "Convertir"
+        Me.btnconvertir.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'lblde
         '
-        Me.TabPage2.Controls.Add(Me.lblA)
-        Me.TabPage2.Controls.Add(Me.lblDe)
-        Me.TabPage2.Controls.Add(Me.btnConvertir)
-        Me.TabPage2.Controls.Add(Me.txtCantidad)
-        Me.TabPage2.Controls.Add(Me.lblRespuesta)
-        Me.TabPage2.Controls.Add(Me.lblCantidad)
-        Me.TabPage2.Controls.Add(Me.cbxEntrada)
-        Me.TabPage2.Controls.Add(Me.cbxSalida)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(464, 274)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "conversor Area"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.lblde.AutoSize = True
+        Me.lblde.Location = New System.Drawing.Point(63, 132)
+        Me.lblde.Name = "lblde"
+        Me.lblde.Size = New System.Drawing.Size(24, 13)
+        Me.lblde.TabIndex = 2
+        Me.lblde.Text = "De:"
         '
-        'lblA
+        'lbla
         '
-        Me.lblA.AutoSize = True
-        Me.lblA.Location = New System.Drawing.Point(180, 121)
-        Me.lblA.Name = "lblA"
-        Me.lblA.Size = New System.Drawing.Size(17, 13)
-        Me.lblA.TabIndex = 7
-        Me.lblA.Text = "A:"
+        Me.lbla.AutoSize = True
+        Me.lbla.Location = New System.Drawing.Point(220, 132)
+        Me.lbla.Name = "lbla"
+        Me.lbla.Size = New System.Drawing.Size(17, 13)
+        Me.lbla.TabIndex = 3
+        Me.lbla.Text = "A:"
         '
-        'lblDe
+        'lblcantidad
         '
-        Me.lblDe.AutoSize = True
-        Me.lblDe.Location = New System.Drawing.Point(18, 121)
-        Me.lblDe.Name = "lblDe"
-        Me.lblDe.Size = New System.Drawing.Size(24, 13)
-        Me.lblDe.TabIndex = 6
-        Me.lblDe.Text = "De:"
+        Me.lblcantidad.AutoSize = True
+        Me.lblcantidad.Location = New System.Drawing.Point(377, 131)
+        Me.lblcantidad.Name = "lblcantidad"
+        Me.lblcantidad.Size = New System.Drawing.Size(52, 13)
+        Me.lblcantidad.TabIndex = 4
+        Me.lblcantidad.Text = "Cantidad:"
         '
-        'btnConvertir
+        'cbotipo
         '
-        Me.btnConvertir.Location = New System.Drawing.Point(131, 175)
-        Me.btnConvertir.Name = "btnConvertir"
-        Me.btnConvertir.Size = New System.Drawing.Size(107, 37)
-        Me.btnConvertir.TabIndex = 5
-        Me.btnConvertir.Text = "Convertir"
-        Me.btnConvertir.UseVisualStyleBackColor = True
+        Me.cbotipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbotipo.FormattingEnabled = True
+        Me.cbotipo.Location = New System.Drawing.Point(194, 27)
+        Me.cbotipo.Name = "cbotipo"
+        Me.cbotipo.Size = New System.Drawing.Size(121, 21)
+        Me.cbotipo.TabIndex = 5
         '
-        'txtCantidad
+        'lblrespuesta
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(97, 30)
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(100, 20)
-        Me.txtCantidad.TabIndex = 4
+        Me.lblrespuesta.AutoSize = True
+        Me.lblrespuesta.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrespuesta.Location = New System.Drawing.Point(361, 250)
+        Me.lblrespuesta.Name = "lblrespuesta"
+        Me.lblrespuesta.Size = New System.Drawing.Size(124, 23)
+        Me.lblrespuesta.TabIndex = 6
+        Me.lblrespuesta.Text = "Respuesta: ?"
         '
-        'lblRespuesta
+        'cbode
         '
-        Me.lblRespuesta.AutoSize = True
-        Me.lblRespuesta.Location = New System.Drawing.Point(203, 33)
-        Me.lblRespuesta.Name = "lblRespuesta"
-        Me.lblRespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblRespuesta.TabIndex = 3
-        Me.lblRespuesta.Text = "Respuesta: ?"
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Location = New System.Drawing.Point(93, 128)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(121, 21)
+        Me.cbode.TabIndex = 7
         '
-        'lblCantidad
+        'cboa
         '
-        Me.lblCantidad.AutoSize = True
-        Me.lblCantidad.Location = New System.Drawing.Point(39, 33)
-        Me.lblCantidad.Name = "lblCantidad"
-        Me.lblCantidad.Size = New System.Drawing.Size(52, 13)
-        Me.lblCantidad.TabIndex = 2
-        Me.lblCantidad.Text = "Cantidad:"
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Location = New System.Drawing.Point(243, 128)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(121, 21)
+        Me.cboa.TabIndex = 8
         '
-        'cbxEntrada
+        'txtcantidad
         '
-        Me.cbxEntrada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxEntrada.FormattingEnabled = True
-        Me.cbxEntrada.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzana", "Hectarea"})
-        Me.cbxEntrada.Location = New System.Drawing.Point(48, 118)
-        Me.cbxEntrada.Name = "cbxEntrada"
-        Me.cbxEntrada.Size = New System.Drawing.Size(121, 21)
-        Me.cbxEntrada.TabIndex = 1
-        '
-        'cbxSalida
-        '
-        Me.cbxSalida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxSalida.FormattingEnabled = True
-        Me.cbxSalida.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzana", "Hectarea"})
-        Me.cbxSalida.Location = New System.Drawing.Point(206, 118)
-        Me.cbxSalida.Name = "cbxSalida"
-        Me.cbxSalida.Size = New System.Drawing.Size(121, 21)
-        Me.cbxSalida.TabIndex = 0
+        Me.txtcantidad.Location = New System.Drawing.Point(435, 128)
+        Me.txtcantidad.Name = "txtcantidad"
+        Me.txtcantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtcantidad.TabIndex = 9
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(619, 380)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.txtcantidad)
+        Me.Controls.Add(Me.cboa)
+        Me.Controls.Add(Me.cbode)
+        Me.Controls.Add(Me.lblrespuesta)
+        Me.Controls.Add(Me.cbotipo)
+        Me.Controls.Add(Me.lblcantidad)
+        Me.Controls.Add(Me.lbla)
+        Me.Controls.Add(Me.lblde)
+        Me.Controls.Add(Me.btnconvertir)
+        Me.Controls.Add(Me.lbltipo)
         Me.Name = "Form1"
-        Me.Text = "Parcial 1"
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
+        Me.Text = "Conversores"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents btnConvertir As Button
-    Friend WithEvents txtCantidad As TextBox
-    Friend WithEvents lblRespuesta As Label
-    Friend WithEvents lblCantidad As Label
-    Friend WithEvents cbxEntrada As ComboBox
-    Friend WithEvents cbxSalida As ComboBox
-    Friend WithEvents lblA As Label
-    Friend WithEvents lblDe As Label
+    Friend WithEvents lbltipo As Label
+    Friend WithEvents btnconvertir As Button
+    Friend WithEvents lblde As Label
+    Friend WithEvents lbla As Label
+    Friend WithEvents lblcantidad As Label
+    Friend WithEvents cbotipo As ComboBox
+    Friend WithEvents lblrespuesta As Label
+    Friend WithEvents cbode As ComboBox
+    Friend WithEvents cboa As ComboBox
+    Friend WithEvents txtcantidad As TextBox
 End Class
