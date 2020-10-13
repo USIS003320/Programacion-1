@@ -32,20 +32,20 @@ Partial Class frmEmpleados
         Me.lblDireccion = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblDatos = New System.Windows.Forms.Label()
-        Me.grbEdicion = New System.Windows.Forms.GroupBox()
+        Me.grbNavegacion = New System.Windows.Forms.GroupBox()
         Me.lblRegistroEmpleado = New System.Windows.Forms.Label()
         Me.btnSiguienteEmpleado = New System.Windows.Forms.Button()
         Me.btnUltimoEmpleado = New System.Windows.Forms.Button()
         Me.btnAnteriorEmpleado = New System.Windows.Forms.Button()
         Me.btnPrimeroEmpleado = New System.Windows.Forms.Button()
-        Me.grbNavegacion = New System.Windows.Forms.GroupBox()
-        Me.btnAgregarEmpleado = New System.Windows.Forms.Button()
-        Me.btnModificarEmpleado = New System.Windows.Forms.Button()
-        Me.btnEliminarEmpleado = New System.Windows.Forms.Button()
+        Me.grbEdicion = New System.Windows.Forms.GroupBox()
         Me.btnBuscarEmpleado = New System.Windows.Forms.Button()
+        Me.btnEliminarEmpleado = New System.Windows.Forms.Button()
+        Me.btnModificarEmpleado = New System.Windows.Forms.Button()
+        Me.btnAgregarEmpleado = New System.Windows.Forms.Button()
         Me.grbDatos.SuspendLayout()
-        Me.grbEdicion.SuspendLayout()
         Me.grbNavegacion.SuspendLayout()
+        Me.grbEdicion.SuspendLayout()
         Me.SuspendLayout()
         '
         'grbDatos
@@ -59,6 +59,7 @@ Partial Class frmEmpleados
         Me.grbDatos.Controls.Add(Me.lblDireccion)
         Me.grbDatos.Controls.Add(Me.lblNombre)
         Me.grbDatos.Controls.Add(Me.lblDatos)
+        Me.grbDatos.Enabled = False
         Me.grbDatos.Location = New System.Drawing.Point(24, 12)
         Me.grbDatos.Name = "grbDatos"
         Me.grbDatos.Size = New System.Drawing.Size(584, 410)
@@ -144,19 +145,19 @@ Partial Class frmEmpleados
         Me.lblDatos.TabIndex = 0
         Me.lblDatos.Text = "Datos de Empleado"
         '
-        'grbEdicion
+        'grbNavegacion
         '
-        Me.grbEdicion.Controls.Add(Me.lblRegistroEmpleado)
-        Me.grbEdicion.Controls.Add(Me.btnSiguienteEmpleado)
-        Me.grbEdicion.Controls.Add(Me.btnUltimoEmpleado)
-        Me.grbEdicion.Controls.Add(Me.btnAnteriorEmpleado)
-        Me.grbEdicion.Controls.Add(Me.btnPrimeroEmpleado)
-        Me.grbEdicion.Location = New System.Drawing.Point(24, 440)
-        Me.grbEdicion.Name = "grbEdicion"
-        Me.grbEdicion.Size = New System.Drawing.Size(292, 61)
-        Me.grbEdicion.TabIndex = 1
-        Me.grbEdicion.TabStop = False
-        Me.grbEdicion.Text = "Edicion"
+        Me.grbNavegacion.Controls.Add(Me.lblRegistroEmpleado)
+        Me.grbNavegacion.Controls.Add(Me.btnSiguienteEmpleado)
+        Me.grbNavegacion.Controls.Add(Me.btnUltimoEmpleado)
+        Me.grbNavegacion.Controls.Add(Me.btnAnteriorEmpleado)
+        Me.grbNavegacion.Controls.Add(Me.btnPrimeroEmpleado)
+        Me.grbNavegacion.Location = New System.Drawing.Point(24, 440)
+        Me.grbNavegacion.Name = "grbNavegacion"
+        Me.grbNavegacion.Size = New System.Drawing.Size(292, 61)
+        Me.grbNavegacion.TabIndex = 1
+        Me.grbNavegacion.TabStop = False
+        Me.grbNavegacion.Text = "Navegacion"
         '
         'lblRegistroEmpleado
         '
@@ -208,48 +209,22 @@ Partial Class frmEmpleados
         Me.btnPrimeroEmpleado.Text = "l<"
         Me.btnPrimeroEmpleado.UseVisualStyleBackColor = True
         '
-        'grbNavegacion
+        'grbEdicion
         '
-        Me.grbNavegacion.Controls.Add(Me.btnBuscarEmpleado)
-        Me.grbNavegacion.Controls.Add(Me.btnEliminarEmpleado)
-        Me.grbNavegacion.Controls.Add(Me.btnModificarEmpleado)
-        Me.grbNavegacion.Controls.Add(Me.btnAgregarEmpleado)
-        Me.grbNavegacion.Location = New System.Drawing.Point(358, 440)
-        Me.grbNavegacion.Name = "grbNavegacion"
-        Me.grbNavegacion.Size = New System.Drawing.Size(280, 61)
-        Me.grbNavegacion.TabIndex = 2
-        Me.grbNavegacion.TabStop = False
-        Me.grbNavegacion.Text = "Navegacion"
-        '
-        'btnAgregarEmpleado
-        '
-        Me.btnAgregarEmpleado.Location = New System.Drawing.Point(7, 25)
-        Me.btnAgregarEmpleado.Name = "btnAgregarEmpleado"
-        Me.btnAgregarEmpleado.Size = New System.Drawing.Size(54, 23)
-        Me.btnAgregarEmpleado.TabIndex = 0
-        Me.btnAgregarEmpleado.Text = "Nuevo"
-        Me.btnAgregarEmpleado.UseVisualStyleBackColor = True
-        '
-        'btnModificarEmpleado
-        '
-        Me.btnModificarEmpleado.Location = New System.Drawing.Point(67, 25)
-        Me.btnModificarEmpleado.Name = "btnModificarEmpleado"
-        Me.btnModificarEmpleado.Size = New System.Drawing.Size(60, 23)
-        Me.btnModificarEmpleado.TabIndex = 1
-        Me.btnModificarEmpleado.Text = "Modificar"
-        Me.btnModificarEmpleado.UseVisualStyleBackColor = True
-        '
-        'btnEliminarEmpleado
-        '
-        Me.btnEliminarEmpleado.Location = New System.Drawing.Point(134, 25)
-        Me.btnEliminarEmpleado.Name = "btnEliminarEmpleado"
-        Me.btnEliminarEmpleado.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminarEmpleado.TabIndex = 2
-        Me.btnEliminarEmpleado.Text = "Eliminar"
-        Me.btnEliminarEmpleado.UseVisualStyleBackColor = True
+        Me.grbEdicion.Controls.Add(Me.btnBuscarEmpleado)
+        Me.grbEdicion.Controls.Add(Me.btnEliminarEmpleado)
+        Me.grbEdicion.Controls.Add(Me.btnModificarEmpleado)
+        Me.grbEdicion.Controls.Add(Me.btnAgregarEmpleado)
+        Me.grbEdicion.Location = New System.Drawing.Point(358, 440)
+        Me.grbEdicion.Name = "grbEdicion"
+        Me.grbEdicion.Size = New System.Drawing.Size(280, 61)
+        Me.grbEdicion.TabIndex = 2
+        Me.grbEdicion.TabStop = False
+        Me.grbEdicion.Text = "Edicion"
         '
         'btnBuscarEmpleado
         '
+        Me.btnBuscarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarEmpleado.Location = New System.Drawing.Point(216, 25)
         Me.btnBuscarEmpleado.Name = "btnBuscarEmpleado"
         Me.btnBuscarEmpleado.Size = New System.Drawing.Size(58, 23)
@@ -257,21 +232,51 @@ Partial Class frmEmpleados
         Me.btnBuscarEmpleado.Text = "Buscar"
         Me.btnBuscarEmpleado.UseVisualStyleBackColor = True
         '
+        'btnEliminarEmpleado
+        '
+        Me.btnEliminarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminarEmpleado.Location = New System.Drawing.Point(134, 25)
+        Me.btnEliminarEmpleado.Name = "btnEliminarEmpleado"
+        Me.btnEliminarEmpleado.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarEmpleado.TabIndex = 2
+        Me.btnEliminarEmpleado.Text = "Eliminar"
+        Me.btnEliminarEmpleado.UseVisualStyleBackColor = True
+        '
+        'btnModificarEmpleado
+        '
+        Me.btnModificarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarEmpleado.Location = New System.Drawing.Point(67, 25)
+        Me.btnModificarEmpleado.Name = "btnModificarEmpleado"
+        Me.btnModificarEmpleado.Size = New System.Drawing.Size(60, 23)
+        Me.btnModificarEmpleado.TabIndex = 1
+        Me.btnModificarEmpleado.Text = "Modificar"
+        Me.btnModificarEmpleado.UseVisualStyleBackColor = True
+        '
+        'btnAgregarEmpleado
+        '
+        Me.btnAgregarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarEmpleado.Location = New System.Drawing.Point(7, 25)
+        Me.btnAgregarEmpleado.Name = "btnAgregarEmpleado"
+        Me.btnAgregarEmpleado.Size = New System.Drawing.Size(54, 23)
+        Me.btnAgregarEmpleado.TabIndex = 0
+        Me.btnAgregarEmpleado.Text = "Nuevo"
+        Me.btnAgregarEmpleado.UseVisualStyleBackColor = True
+        '
         'frmEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(660, 531)
-        Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbEdicion)
+        Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatos)
         Me.Name = "frmEmpleados"
         Me.Text = "Registro de empleados"
         Me.grbDatos.ResumeLayout(False)
         Me.grbDatos.PerformLayout()
-        Me.grbEdicion.ResumeLayout(False)
-        Me.grbEdicion.PerformLayout()
         Me.grbNavegacion.ResumeLayout(False)
+        Me.grbNavegacion.PerformLayout()
+        Me.grbEdicion.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -284,8 +289,8 @@ Partial Class frmEmpleados
     Friend WithEvents lblDireccion As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblDatos As Label
-    Friend WithEvents grbEdicion As GroupBox
     Friend WithEvents grbNavegacion As GroupBox
+    Friend WithEvents grbEdicion As GroupBox
     Friend WithEvents txtTelefonoEmpleado As TextBox
     Friend WithEvents txtDireccionEmpleado As TextBox
     Friend WithEvents lblRegistroEmpleado As Label
