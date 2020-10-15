@@ -11,7 +11,7 @@
 
     Sub obtenerDatos()
         dataTable = objConexion.obtenerDatos().Tables("Empleados")
-
+        dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idEmpleado")}
         mostrarDatos()
     End Sub
 
@@ -116,6 +116,15 @@
                 posicion -= 1
             End If
             obtenerDatos()
+        End If
+    End Sub
+
+    Private Sub btnBuscarEmpleado_Click(sender As Object, e As EventArgs) Handles btnBuscarEmpleado.Click
+        Dim objBuscarEmpleado As New frmBuscarEmpleados
+        objBuscarEmpleado.ShowDialog()
+        If objBuscarEmpleado._idE > 0 Then
+            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarEmpleado._idE))
+            mostrarDatos()
         End If
     End Sub
 End Class

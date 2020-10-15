@@ -50,6 +50,4 @@ Public Class db_conexion
         Return miCommand.ExecuteNonQuery()
     End Function
 
-
-
 End Class
