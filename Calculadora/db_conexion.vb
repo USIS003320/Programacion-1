@@ -26,6 +26,17 @@ Public Class db_conexion
 
         Return ds
     End Function
+    Public Function obtenerDatosP()
+        ds.Clear()
+
+        miCommand.Connection = miConexion
+
+        miCommand.CommandText = "select * from Producto"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "Producto")
+
+        Return ds
+    End Function
     Public Function mantenimientoDatosEmpleado(ByVal datos As String(), ByVal accion As String)
         Dim sql, msg As String
         Select Case accion
