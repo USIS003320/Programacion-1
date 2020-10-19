@@ -119,5 +119,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculadora\Calculadora.vbproj">
+      <Project>{F3E82593-7611-46C0-AB0E-03D8D2C14E5B}</Project>
+      <Name>Calculadora</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

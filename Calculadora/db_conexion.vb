@@ -50,4 +50,7 @@ Public Class db_conexion
         Return miCommand.ExecuteNonQuery()
     End Function
 
+    Friend Function mantenimientoDatosProveedores(v() As String, accion As String) As Object
+        Throw New NotImplementedException()
+    End Function
 End Class
