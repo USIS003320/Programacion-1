@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmPro
+Partial Class frmProveedor
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -247,7 +247,7 @@ Partial Class FrmPro
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Datos de Proveedores"
         '
-        'FrmPro
+        'frmProveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -255,8 +255,8 @@ Partial Class FrmPro
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "FrmPro"
-        Me.Text = "FrmPro"
+        Me.Name = "frmProveedor"
+        Me.Text = "FrmProveedor"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

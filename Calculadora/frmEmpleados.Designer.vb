@@ -76,7 +76,7 @@ Partial Class frmEmpleados
         '
         'txtDireccionEmpleado
         '
-        Me.txtDireccionEmpleado.Location = New System.Drawing.Point(105, 224)
+        Me.txtDireccionEmpleado.Location = New System.Drawing.Point(101, 208)
         Me.txtDireccionEmpleado.Multiline = True
         Me.txtDireccionEmpleado.Name = "txtDireccionEmpleado"
         Me.txtDireccionEmpleado.Size = New System.Drawing.Size(275, 92)
@@ -84,14 +84,14 @@ Partial Class frmEmpleados
         '
         'txtNombreEmpleado
         '
-        Me.txtNombreEmpleado.Location = New System.Drawing.Point(94, 147)
+        Me.txtNombreEmpleado.Location = New System.Drawing.Point(90, 146)
         Me.txtNombreEmpleado.Name = "txtNombreEmpleado"
         Me.txtNombreEmpleado.Size = New System.Drawing.Size(286, 20)
         Me.txtNombreEmpleado.TabIndex = 6
         '
         'txtCodigoEmpleado
         '
-        Me.txtCodigoEmpleado.Location = New System.Drawing.Point(90, 80)
+        Me.txtCodigoEmpleado.Location = New System.Drawing.Point(90, 69)
         Me.txtCodigoEmpleado.Name = "txtCodigoEmpleado"
         Me.txtCodigoEmpleado.Size = New System.Drawing.Size(125, 20)
         Me.txtCodigoEmpleado.TabIndex = 5
@@ -110,7 +110,7 @@ Partial Class frmEmpleados
         '
         Me.lblCodigo.AutoSize = True
         Me.lblCodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodigo.Location = New System.Drawing.Point(34, 80)
+        Me.lblCodigo.Location = New System.Drawing.Point(34, 72)
         Me.lblCodigo.Name = "lblCodigo"
         Me.lblCodigo.Size = New System.Drawing.Size(50, 13)
         Me.lblCodigo.TabIndex = 3
@@ -120,7 +120,7 @@ Partial Class frmEmpleados
         '
         Me.lblDireccion.AutoSize = True
         Me.lblDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccion.Location = New System.Drawing.Point(34, 227)
+        Me.lblDireccion.Location = New System.Drawing.Point(30, 211)
         Me.lblDireccion.Name = "lblDireccion"
         Me.lblDireccion.Size = New System.Drawing.Size(65, 13)
         Me.lblDireccion.TabIndex = 2
@@ -130,7 +130,7 @@ Partial Class frmEmpleados
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(34, 150)
+        Me.lblNombre.Location = New System.Drawing.Point(30, 149)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(54, 13)
         Me.lblNombre.TabIndex = 1

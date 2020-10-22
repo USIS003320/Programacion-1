@@ -1,4 +1,4 @@
-﻿Public Class FrmPro
+﻿Public Class frmProveedor
     Dim objConexion As New db_conexion
     Dim dataTable As New DataTable
     Dim posicion As Integer
@@ -71,7 +71,7 @@
                 }, accion)
             MessageBox.Show(msg, "Registro de proveedores", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            obtenerDatos()
+            obtenerDatos1()
             HabDescontroles(True)
             Button5.Text = "Nuevo"
             Button6.Text = "Modificar"

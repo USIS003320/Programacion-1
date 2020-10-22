@@ -27,7 +27,7 @@
             lblRegistroEmpleado.Text = posicion + 1 & " de " & dataTable.Rows.Count
         Else
             limpiarDatosEmpleado()
-            MessageBox.Show("No hay registrp que mostrar", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("No hay registro que mostrar", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 

@@ -1,5 +1,17 @@
-﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+﻿Public Class frmMenu
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Close()
     End Sub
-End class
+
+    Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
+        Dim objEmpleados As New frmEmpleados
+        objEmpleados.MdiParent = Me
+        objEmpleados.Show()
+    End Sub
+
+    Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
+        Dim objProductos As New frmProductos
+        objProductos.MdiParent = Me
+        objProductos.Show()
+    End Sub
+End Class

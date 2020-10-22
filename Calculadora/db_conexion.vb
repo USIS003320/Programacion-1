@@ -24,6 +24,15 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "empleados")
 
+        miCommand.CommandText = "select * from Categorias"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "Categorias")
+
+
+        miCommand.CommandText = "select * from Productos"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "Productos")
+
         Return ds
     End Function
     Public Function mantenimientoDatosEmpleado(ByVal datos As String(), ByVal accion As String)

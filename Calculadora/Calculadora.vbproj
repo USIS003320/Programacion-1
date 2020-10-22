@@ -117,6 +117,12 @@
     <Compile Include="FrmPro.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmProductos.Designer.vb">
+      <DependentUpon>frmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -147,6 +153,9 @@
     <EmbeddedResource Include="FrmPro.resx">
       <DependentUpon>FrmPro.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -175,6 +184,12 @@
       <DependentUpon>db_sistema.mdf</DependentUpon>
     </Content>
     <Content Include="iconfinder_Client_Male_Dark_80823.ico" />
+    <None Include="Resources\Category.png" />
+    <None Include="Resources\Productos.png" />
+    <None Include="Resources\Salir.png" />
+    <None Include="Resources\Arqueo.png" />
+    <None Include="Resources\Proveedor.png" />
+    <None Include="Resources\Empleado.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
