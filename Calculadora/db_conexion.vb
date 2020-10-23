@@ -52,6 +52,23 @@ Public Class db_conexion
         End If
         Return msg
     End Function
+    Public Function mantenimientoDatosProductos(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO Productos (idCategoria,codigo,nombre,pedidos,medidas) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "')"
+            Case "modificar"
+                sql = "UPDATE Productos SET idCategoria='" + datos(1) + "',codigo='" + datos(2) + "',nombre='" + datos(3) + "',pedidos='" + datos(4) + "',medidas='" + datos(5) + "' WHERE idProducto='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM Productos WHERE idProducto='" + datos(0) + "'"
+        End Select
+        If (executesql(sql) > 0) Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
 
     Private Function executesql(ByVal sql As String)
         miCommand.Connection = miConexion

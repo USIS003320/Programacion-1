@@ -34,7 +34,7 @@
             lblRegistroProducto.Text = posicion + 1 & " de " & dataTable.Rows.Count
         Else
             limpiarDatosProductos()
-            MessageBox.Show("No hay registro que mostrar", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("No hay registro que mostrar", "Registro de Productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
     Private Sub limpiarDatosProductos()
@@ -87,7 +87,7 @@
             HabDescontroles(False)
             limpiarDatosProductos()
         Else
-            Dim msg = objConexion.mantenimientoDatosEmpleado(New String() {
+            Dim msg = objConexion.mantenimientoDatosProductos(New String() {
                 Me.Tag, cboCategoriaProducto.SelectedValue, txtCodigoProducto.Text, txtNombreProducto.Text, txtPedidosProducto.Text, txtMedidasProducto.Text
             }, accion)
             MessageBox.Show(msg, "Registro de clientes", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -110,6 +110,29 @@
             HabDescontroles(True)
             btnAgregarProducto.Text = "Nuevo"
             btnModificarProducto.Text = "Modificar"
+        End If
+    End Sub
+
+    Private Sub btnEliminarProducto_Click(sender As Object, e As EventArgs) Handles btnEliminarProducto.Click
+        If (MessageBox.Show("Esta seguro de borrar a " + txtPedidosProducto.Text, "Registro de Productos",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+            Dim msg = objConexion.mantenimientoDatosProductos(New String() {Me.Tag}, "eliminar")
+            If msg IsNot "error" Then
+                If posicion > 0 Then
+                    posicion -= 1
+                End If
+                obtenerDatos()
+                mostrarDatos()
+            End If
+        End If
+    End Sub
+
+    Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+        Dim objBuscarProducto As New frmBuscarProducto
+        objBuscarProducto.ShowDialog()
+        If objBuscarProducto._idP > 0 Then
+            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarProducto._idP))
+            mostrarDatos()
         End If
     End Sub
 End Class
