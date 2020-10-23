@@ -24,9 +24,9 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "empleados")
 
-        miCommand.CommandText = "select * from Categorias"
+        miCommand.CommandText = "select * from Proveedor"
         miAdapter.SelectCommand = miCommand
-        miAdapter.Fill(ds, "Categorias")
+        miAdapter.Fill(ds, "Proveedor")
 
 
         miCommand.CommandText = "select * from Productos"
@@ -61,6 +61,23 @@ Public Class db_conexion
                 sql = "UPDATE Productos SET idCategoria='" + datos(1) + "',codigo='" + datos(2) + "',nombre='" + datos(3) + "',pedidos='" + datos(4) + "',medidas='" + datos(5) + "' WHERE idProducto='" + datos(0) + "'"
             Case "eliminar"
                 sql = "DELETE FROM Productos WHERE idProducto='" + datos(0) + "'"
+        End Select
+        If executesql(sql) > 0 Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosProveedor(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO Proveedor (codigo,nombre,direccion,telefono) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "')"
+            Case "modificar"
+                sql = "UPDATE Proveedor SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',direccion='" + datos(3) + "',telefono='" + datos(4) + "' WHERE idProveedor='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM Proveedor WHERE idProveedor='" + datos(0) + "'"
         End Select
         If (executesql(sql) > 0) Then
             msg = "Accion terminada con exito"

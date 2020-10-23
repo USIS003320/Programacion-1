@@ -70,7 +70,7 @@ Partial Class frmMenu
         Me.EmpleadosToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Empleado
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'ProveedoresToolStripMenuItem
@@ -78,7 +78,7 @@ Partial Class frmMenu
         Me.ProveedoresToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Proveedor
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'ArqueoToolStripMenuItem
@@ -86,7 +86,7 @@ Partial Class frmMenu
         Me.ArqueoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Arqueo
         Me.ArqueoToolStripMenuItem.Name = "ArqueoToolStripMenuItem"
         Me.ArqueoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.ArqueoToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.ArqueoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ArqueoToolStripMenuItem.Text = "Arqueo"
         '
         'InventarioToolStripMenuItem
@@ -101,7 +101,7 @@ Partial Class frmMenu
         Me.CategoriaToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Category
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CategoriaToolStripMenuItem.Text = "Categoria"
         '
         'ProductoToolStripMenuItem
@@ -109,7 +109,7 @@ Partial Class frmMenu
         Me.ProductoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Productos
         Me.ProductoToolStripMenuItem.Name = "ProductoToolStripMenuItem"
         Me.ProductoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
         'frmMenu

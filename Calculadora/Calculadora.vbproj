@@ -111,22 +111,28 @@
     <Compile Include="frmBuscarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBuscarProveedor.Designer.vb">
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEmpleados.Designer.vb">
       <DependentUpon>frmEmpleados.vb</DependentUpon>
     </Compile>
     <Compile Include="frmEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPro.Designer.vb">
-      <DependentUpon>FrmPro.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPro.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmProductos.Designer.vb">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
     <Compile Include="frmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedor.Designer.vb">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -156,14 +162,17 @@
     <EmbeddedResource Include="frmBuscarProducto.resx">
       <DependentUpon>frmBuscarProducto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarProveedor.resx">
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPro.resx">
-      <DependentUpon>FrmPro.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedor.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
