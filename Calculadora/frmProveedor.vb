@@ -121,8 +121,8 @@
     Private Sub btnBuscarProveedor_Click(sender As Object, e As EventArgs) Handles btnBuscarProveedor.Click
         Dim objBuscarProveedor As New frmBuscarProveedor
         objBuscarProveedor.ShowDialog()
-        If objBuscarProveedor._idPr > 0 Then
-            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarProveedor._idPr))
+        If objBuscarProveedor._idR > 0 Then
+            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarProveedor._idR))
             mostrarDatos()
         End If
     End Sub

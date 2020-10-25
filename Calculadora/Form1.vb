@@ -20,4 +20,10 @@
         objProveedores.MdiParent = Me
         objProveedores.Show()
     End Sub
+
+    Private Sub ArqueoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArqueoToolStripMenuItem.Click
+        Dim objProveedores As New frmArqueo
+        objProveedores.MdiParent = Me
+        objProveedores.Show()
+    End Sub
 End Class

@@ -39,17 +39,19 @@ Partial Class frmBuscarEmpleados
         '
         Me.lblBuscarEmpleado.AutoSize = True
         Me.lblBuscarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarEmpleado.Location = New System.Drawing.Point(12, 20)
+        Me.lblBuscarEmpleado.Location = New System.Drawing.Point(18, 31)
+        Me.lblBuscarEmpleado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBuscarEmpleado.Name = "lblBuscarEmpleado"
-        Me.lblBuscarEmpleado.Size = New System.Drawing.Size(60, 16)
+        Me.lblBuscarEmpleado.Size = New System.Drawing.Size(86, 25)
         Me.lblBuscarEmpleado.TabIndex = 0
         Me.lblBuscarEmpleado.Text = "Buscar:"
         '
         'txtBuscarEmpleado
         '
-        Me.txtBuscarEmpleado.Location = New System.Drawing.Point(78, 16)
+        Me.txtBuscarEmpleado.Location = New System.Drawing.Point(117, 25)
+        Me.txtBuscarEmpleado.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtBuscarEmpleado.Name = "txtBuscarEmpleado"
-        Me.txtBuscarEmpleado.Size = New System.Drawing.Size(593, 20)
+        Me.txtBuscarEmpleado.Size = New System.Drawing.Size(888, 26)
         Me.txtBuscarEmpleado.TabIndex = 1
         '
         'grdBuscarEmpleado
@@ -61,24 +63,29 @@ Partial Class frmBuscarEmpleados
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grdBuscarEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdBuscarEmpleado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEmpleado, Me.codigo, Me.nombre, Me.direccion, Me.telefono})
-        Me.grdBuscarEmpleado.Location = New System.Drawing.Point(15, 61)
+        Me.grdBuscarEmpleado.Location = New System.Drawing.Point(22, 94)
+        Me.grdBuscarEmpleado.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.grdBuscarEmpleado.Name = "grdBuscarEmpleado"
         Me.grdBuscarEmpleado.ReadOnly = True
-        Me.grdBuscarEmpleado.Size = New System.Drawing.Size(794, 438)
+        Me.grdBuscarEmpleado.RowHeadersWidth = 62
+        Me.grdBuscarEmpleado.Size = New System.Drawing.Size(1191, 674)
         Me.grdBuscarEmpleado.TabIndex = 2
         '
         'idEmpleado
         '
         Me.idEmpleado.DataPropertyName = "idEmpleado"
         Me.idEmpleado.HeaderText = "ID"
+        Me.idEmpleado.MinimumWidth = 8
         Me.idEmpleado.Name = "idEmpleado"
         Me.idEmpleado.ReadOnly = True
         Me.idEmpleado.Visible = False
+        Me.idEmpleado.Width = 150
         '
         'codigo
         '
         Me.codigo.DataPropertyName = "codigo"
         Me.codigo.HeaderText = "Codigo"
+        Me.codigo.MinimumWidth = 8
         Me.codigo.Name = "codigo"
         Me.codigo.ReadOnly = True
         Me.codigo.Width = 150
@@ -87,6 +94,7 @@ Partial Class frmBuscarEmpleados
         '
         Me.nombre.DataPropertyName = "nombre"
         Me.nombre.HeaderText = "Nombre"
+        Me.nombre.MinimumWidth = 8
         Me.nombre.Name = "nombre"
         Me.nombre.ReadOnly = True
         Me.nombre.Width = 200
@@ -95,6 +103,7 @@ Partial Class frmBuscarEmpleados
         '
         Me.direccion.DataPropertyName = "direccion"
         Me.direccion.HeaderText = "Direccion"
+        Me.direccion.MinimumWidth = 8
         Me.direccion.Name = "direccion"
         Me.direccion.ReadOnly = True
         Me.direccion.Width = 250
@@ -103,6 +112,7 @@ Partial Class frmBuscarEmpleados
         '
         Me.telefono.DataPropertyName = "telefono"
         Me.telefono.HeaderText = "Telefono"
+        Me.telefono.MinimumWidth = 8
         Me.telefono.Name = "telefono"
         Me.telefono.ReadOnly = True
         Me.telefono.Width = 150
@@ -111,9 +121,10 @@ Partial Class frmBuscarEmpleados
         '
         Me.btnSeleccionarEmpleado.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSeleccionarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarEmpleado.Location = New System.Drawing.Point(364, 514)
+        Me.btnSeleccionarEmpleado.Location = New System.Drawing.Point(546, 791)
+        Me.btnSeleccionarEmpleado.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSeleccionarEmpleado.Name = "btnSeleccionarEmpleado"
-        Me.btnSeleccionarEmpleado.Size = New System.Drawing.Size(212, 40)
+        Me.btnSeleccionarEmpleado.Size = New System.Drawing.Size(318, 62)
         Me.btnSeleccionarEmpleado.TabIndex = 3
         Me.btnSeleccionarEmpleado.Text = "Seleccionar Empleado"
         Me.btnSeleccionarEmpleado.UseVisualStyleBackColor = True
@@ -122,23 +133,25 @@ Partial Class frmBuscarEmpleados
         '
         Me.btnCancelarEmpleado.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCancelarEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarEmpleado.Location = New System.Drawing.Point(597, 514)
+        Me.btnCancelarEmpleado.Location = New System.Drawing.Point(896, 791)
+        Me.btnCancelarEmpleado.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnCancelarEmpleado.Name = "btnCancelarEmpleado"
-        Me.btnCancelarEmpleado.Size = New System.Drawing.Size(212, 40)
+        Me.btnCancelarEmpleado.Size = New System.Drawing.Size(318, 62)
         Me.btnCancelarEmpleado.TabIndex = 4
         Me.btnCancelarEmpleado.Text = "Cancelar"
         Me.btnCancelarEmpleado.UseVisualStyleBackColor = True
         '
         'frmBuscarEmpleados
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(851, 566)
+        Me.ClientSize = New System.Drawing.Size(1276, 871)
         Me.Controls.Add(Me.btnCancelarEmpleado)
         Me.Controls.Add(Me.btnSeleccionarEmpleado)
         Me.Controls.Add(Me.grdBuscarEmpleado)
         Me.Controls.Add(Me.txtBuscarEmpleado)
         Me.Controls.Add(Me.lblBuscarEmpleado)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmBuscarEmpleados"
         Me.Text = "Busqueda de registro de Empleados"
         CType(Me.grdBuscarEmpleado, System.ComponentModel.ISupportInitialize).EndInit()
