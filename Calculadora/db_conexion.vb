@@ -33,6 +33,10 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "Productos")
 
+        miCommand.CommandText = "select * from Arqueo"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "Arqueo")
+
         Return ds
     End Function
     Public Function mantenimientoDatosEmpleado(ByVal datos As String(), ByVal accion As String)
@@ -78,6 +82,23 @@ Public Class db_conexion
                 sql = "UPDATE Proveedor SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',direccion='" + datos(3) + "',telefono='" + datos(4) + "' WHERE idProveedor='" + datos(0) + "'"
             Case "eliminar"
                 sql = "DELETE FROM Proveedor WHERE idProveedor='" + datos(0) + "'"
+        End Select
+        If (executesql(sql) > 0) Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosArqueo(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO Arqueo (Nombre de Empleados,Direccion,Telefono,Forma de Pago) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "')"
+            Case "modificar"
+                sql = "UPDATE Arqueo SET Nombre de Empleados='" + datos(1) + "',Direccion='" + datos(2) + "',Telefono='" + datos(3) + "',Forma de Pago='" + datos(4) + "' WHERE idEmpleado='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM Arqueo WHERE idArqueo='" + datos(0) + "'"
         End Select
         If (executesql(sql) > 0) Then
             msg = "Accion terminada con exito"

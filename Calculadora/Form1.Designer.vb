@@ -37,10 +37,12 @@ Partial Class frmMenu
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(930, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1395, 35)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -48,21 +50,21 @@ Partial Class frmMenu
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(88, 29)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Salir
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(147, 34)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ArqueoToolStripMenuItem})
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(105, 29)
         Me.EmpresaToolStripMenuItem.Text = "EMPRESA"
         '
         'EmpleadosToolStripMenuItem
@@ -70,7 +72,7 @@ Partial Class frmMenu
         Me.EmpleadosToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Empleado
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'ProveedoresToolStripMenuItem
@@ -78,7 +80,7 @@ Partial Class frmMenu
         Me.ProveedoresToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Proveedor
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'ArqueoToolStripMenuItem
@@ -86,14 +88,14 @@ Partial Class frmMenu
         Me.ArqueoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Arqueo
         Me.ArqueoToolStripMenuItem.Name = "ArqueoToolStripMenuItem"
         Me.ArqueoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.ArqueoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ArqueoToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.ArqueoToolStripMenuItem.Text = "Arqueo"
         '
         'InventarioToolStripMenuItem
         '
         Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriaToolStripMenuItem, Me.ProductoToolStripMenuItem})
         Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(129, 29)
         Me.InventarioToolStripMenuItem.Text = "INVENTARIO"
         '
         'CategoriaToolStripMenuItem
@@ -101,7 +103,7 @@ Partial Class frmMenu
         Me.CategoriaToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Category
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(247, 34)
         Me.CategoriaToolStripMenuItem.Text = "Categoria"
         '
         'ProductoToolStripMenuItem
@@ -109,17 +111,18 @@ Partial Class frmMenu
         Me.ProductoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Productos
         Me.ProductoToolStripMenuItem.Name = "ProductoToolStripMenuItem"
         Me.ProductoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(247, 34)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
         'frmMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(930, 493)
+        Me.ClientSize = New System.Drawing.Size(1395, 758)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmMenu"
         Me.Text = "Sistema Lacteos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

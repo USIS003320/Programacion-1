@@ -24,4 +24,16 @@
         _idE = 0
         Close()
     End Sub
+
+    Private Sub grdBuscarEmpleado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grdBuscarEmpleado.CellContentClick
+
+    End Sub
+
+    Private Sub txtBuscarEmpleado_TextChanged(sender As Object, e As EventArgs) Handles txtBuscarEmpleado.TextChanged
+
+    End Sub
+
+    Private Sub lblBuscarEmpleado_Click(sender As Object, e As EventArgs) Handles lblBuscarEmpleado.Click
+
+    End Sub
 End Class

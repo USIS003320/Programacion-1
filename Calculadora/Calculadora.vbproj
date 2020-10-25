@@ -99,6 +99,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmArqueo.Designer.vb">
+      <DependentUpon>frmArqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmArqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarArqueo.Designer.vb">
+      <DependentUpon>frmBuscarArqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarArqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.Designer.vb">
       <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
     </Compile>
@@ -155,6 +167,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArqueo.resx">
+      <DependentUpon>frmArqueo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarArqueo.resx">
+      <DependentUpon>frmBuscarArqueo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
