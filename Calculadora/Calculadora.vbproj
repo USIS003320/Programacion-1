@@ -238,6 +238,7 @@
       <DependentUpon>db_sistema.mdf</DependentUpon>
     </Content>
     <Content Include="iconfinder_Client_Male_Dark_80823.ico" />
+    <None Include="Resources\Dinero.png" />
     <None Include="Resources\Category.png" />
     <None Include="Resources\Productos.png" />
     <None Include="Resources\Salir.png" />

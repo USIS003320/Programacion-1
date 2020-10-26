@@ -8,12 +8,12 @@
         obtenerDatos()
     End Sub
     Sub obtenerDatos()
-        dataTable = objConexion.obtenerDatos().Tables("Productos")
-        dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idProducto")}
+        dataTable = objConexion.obtenerDatos().Tables("Categorias")
+        dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idCategorias")}
 
-        cboCategoriaGanancias.DataSource = objConexion.obtenerDatos().Tables("Ganancias").DefaultView()
-        cboCategoriaGanancias.DisplayMember = "Ganancias"
-        cboCategoriaGanancias.ValueMember = "Ganancias.idProducto"
+        cboCategoriaGanancias.DataSource = objConexion.obtenerDatos().Tables("Productos").DefaultView()
+        cboCategoriaGanancias.DisplayMember = "producto"
+        cboCategoriaGanancias.ValueMember = "Productos.idProducto"
 
         mostrarDatos()
     End Sub
