@@ -32,6 +32,7 @@ Partial Class frmMenu
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GananciasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class frmMenu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1395, 35)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1395, 33)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -62,7 +63,7 @@ Partial Class frmMenu
         '
         'EmpresaToolStripMenuItem
         '
-        Me.EmpresaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ArqueoToolStripMenuItem})
+        Me.EmpresaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ArqueoToolStripMenuItem, Me.GananciasToolStripMenuItem})
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
         Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(105, 29)
         Me.EmpresaToolStripMenuItem.Text = "EMPRESA"
@@ -114,6 +115,12 @@ Partial Class frmMenu
         Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(247, 34)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
+        'GananciasToolStripMenuItem
+        '
+        Me.GananciasToolStripMenuItem.Name = "GananciasToolStripMenuItem"
+        Me.GananciasToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.GananciasToolStripMenuItem.Text = "Ganancias"
+        '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -143,4 +150,5 @@ Partial Class frmMenu
     Friend WithEvents InventarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GananciasToolStripMenuItem As ToolStripMenuItem
 End Class

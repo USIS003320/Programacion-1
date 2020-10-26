@@ -13,7 +13,7 @@
         dataTable = objConexion.obtenerDatos().Tables("Productos")
         dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idProducto")}
 
-        cboCategoriaProducto.DataSource = objConexion.obtenerDatos().Tables("categorias").DefaultView()
+        cboCategoriaProducto.DataSource = objConexion.obtenerDatos().Tables("Categorias").DefaultView()
         cboCategoriaProducto.DisplayMember = "categoria"
         cboCategoriaProducto.ValueMember = "categorias.idCategoria"
 
