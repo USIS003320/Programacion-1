@@ -92,6 +92,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="db_conexion.vb" />
+    <Compile Include="db_sistemaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_sistemaDataSet.vb">
+      <DependentUpon>db_sistemaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +141,12 @@
       <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcompras.Designer.vb">
+      <DependentUpon>frmcompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcompras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmpleados.Designer.vb">
@@ -198,6 +212,9 @@
     <EmbeddedResource Include="frmBuscarProveedor.resx">
       <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmcompras.resx">
+      <DependentUpon>frmcompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +235,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="db_sistemaDataSet.xsc">
+      <DependentUpon>db_sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sistemaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sistemaDataSet.xss">
+      <DependentUpon>db_sistemaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

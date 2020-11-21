@@ -32,6 +32,11 @@ Calculadora
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Calculadora.My.Resources.Resources.Dinero">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Calculadora.My.Resources.Resources.Empleado">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -50,6 +55,271 @@ Calculadora
 <member name="P:Calculadora.My.Resources.Resources.Salir">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ArqueoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.CategoriasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.empleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.GananciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProductosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.tipofacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.pagosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.comprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasproductosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ArqueoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.CategoriasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.empleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.GananciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProductosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.tipofacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.pagosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.comprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasproductosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ArqueoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.CategoriasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.empleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.GananciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProductosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.ProveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.tipofacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.pagosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.comprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.dcomprasproductosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.ArqueoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.CategoriasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.empleadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.GananciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.ProductosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.ProveedorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.tipofacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.pagosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.comprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.dcomprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.dcomprasproductosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Calculadora.db_sistemaDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Calculadora.db_sistemaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Calculadora.db_sistemaDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.UpdateAll(Calculadora.db_sistemaDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
 </summary>
 </member>
 </members>

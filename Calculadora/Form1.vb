@@ -32,4 +32,10 @@
         objProveedores.MdiParent = Me
         objProveedores.Show()
     End Sub
+
+    Private Sub FacturacionCompraToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles FacturacionCompraToolStripMenuItem.Click
+        Dim objCompras As New frmcompras
+        objCompras.MdiParent = Me
+        objCompras.Show()
+    End Sub
 End Class
