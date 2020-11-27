@@ -608,10 +608,10 @@ SELECT idDetalle, IdCompra, idProducto, cantidad, precio FROM dcompras WHERE (id
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="db_sistemaConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillDcomprasProductos" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataDcomprasProductos" GeneratorSourceName="FillDcomprasProductos" GetMethodModifier="Public" GetMethodName="GetDataDcomprasProductos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataDcomprasProductos" UserSourceName="FillDcomprasProductos">
+              <DbSource ConnectionRef="db_sistemaConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FilldcomprasProductos" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDatadcomprasProductos" GeneratorSourceName="FilldcomprasProductos" GetMethodModifier="Public" GetMethodName="GetDatadcomprasProductos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDatadcomprasProductos" UserSourceName="FilldcomprasProductos">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        dcompras.idProducto, dcompras.cantidad, dcompras.precio, Productos.codigo, Productos.nombre, Productos.pedidos, Productos.medidas, dcompras.IdCompra
+                    <CommandText>SELECT        dcompras.idDetalle, dcompras.IdCompra, dcompras.idProducto, dcompras.cantidad, dcompras.precio, Productos.codigo, Productos.nombre, Productos.pedidos
 FROM            dcompras INNER JOIN
                          Productos ON dcompras.idProducto = Productos.idProducto</CommandText>
                     <Parameters />
@@ -620,14 +620,14 @@ FROM            dcompras INNER JOIN
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="idDetalle" DataSetColumn="idDetalle" />
+              <Mapping SourceColumn="IdCompra" DataSetColumn="IdCompra" />
               <Mapping SourceColumn="idProducto" DataSetColumn="idProducto" />
               <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
               <Mapping SourceColumn="precio" DataSetColumn="precio" />
               <Mapping SourceColumn="codigo" DataSetColumn="codigo" />
               <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
               <Mapping SourceColumn="pedidos" DataSetColumn="pedidos" />
-              <Mapping SourceColumn="medidas" DataSetColumn="medidas" />
-              <Mapping SourceColumn="IdCompra" DataSetColumn="IdCompra" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -639,7 +639,7 @@ FROM            dcompras INNER JOIN
   <xs:element name="db_sistemaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_sistemaDataSet" msprop:Generator_UserDSName="db_sistemaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Arqueo" msprop:Generator_TableClassName="ArqueoDataTable" msprop:Generator_TableVarName="tableArqueo" msprop:Generator_RowChangedName="ArqueoRowChanged" msprop:Generator_TablePropName="Arqueo" msprop:Generator_RowDeletingName="ArqueoRowDeleting" msprop:Generator_RowChangingName="ArqueoRowChanging" msprop:Generator_RowEvHandlerName="ArqueoRowChangeEventHandler" msprop:Generator_RowDeletedName="ArqueoRowDeleted" msprop:Generator_RowClassName="ArqueoRow" msprop:Generator_UserTableName="Arqueo" msprop:Generator_RowEvArgName="ArqueoRowChangeEvent">
+        <xs:element name="Arqueo" msprop:Generator_TableClassName="ArqueoDataTable" msprop:Generator_TableVarName="tableArqueo" msprop:Generator_TablePropName="Arqueo" msprop:Generator_RowDeletingName="ArqueoRowDeleting" msprop:Generator_RowChangingName="ArqueoRowChanging" msprop:Generator_RowEvHandlerName="ArqueoRowChangeEventHandler" msprop:Generator_RowDeletedName="ArqueoRowDeleted" msprop:Generator_UserTableName="Arqueo" msprop:Generator_RowChangedName="ArqueoRowChanged" msprop:Generator_RowEvArgName="ArqueoRowChangeEvent" msprop:Generator_RowClassName="ArqueoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdArqueo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdArqueo" msprop:Generator_ColumnPropNameInRow="IdArqueo" msprop:Generator_ColumnPropNameInTable="IdArqueoColumn" msprop:Generator_UserColumnName="IdArqueo" type="xs:int" />
@@ -674,7 +674,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Categorias" msprop:Generator_TableClassName="CategoriasDataTable" msprop:Generator_TableVarName="tableCategorias" msprop:Generator_RowChangedName="CategoriasRowChanged" msprop:Generator_TablePropName="Categorias" msprop:Generator_RowDeletingName="CategoriasRowDeleting" msprop:Generator_RowChangingName="CategoriasRowChanging" msprop:Generator_RowEvHandlerName="CategoriasRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriasRowDeleted" msprop:Generator_RowClassName="CategoriasRow" msprop:Generator_UserTableName="Categorias" msprop:Generator_RowEvArgName="CategoriasRowChangeEvent">
+        <xs:element name="Categorias" msprop:Generator_TableClassName="CategoriasDataTable" msprop:Generator_TableVarName="tableCategorias" msprop:Generator_TablePropName="Categorias" msprop:Generator_RowDeletingName="CategoriasRowDeleting" msprop:Generator_RowChangingName="CategoriasRowChanging" msprop:Generator_RowEvHandlerName="CategoriasRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriasRowDeleted" msprop:Generator_UserTableName="Categorias" msprop:Generator_RowChangedName="CategoriasRowChanged" msprop:Generator_RowEvArgName="CategoriasRowChangeEvent" msprop:Generator_RowClassName="CategoriasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idCategoria" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidCategoria" msprop:Generator_ColumnPropNameInRow="idCategoria" msprop:Generator_ColumnPropNameInTable="idCategoriaColumn" msprop:Generator_UserColumnName="idCategoria" type="xs:int" />
@@ -688,7 +688,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="empleados" msprop:Generator_TableClassName="empleadosDataTable" msprop:Generator_TableVarName="tableempleados" msprop:Generator_RowChangedName="empleadosRowChanged" msprop:Generator_TablePropName="empleados" msprop:Generator_RowDeletingName="empleadosRowDeleting" msprop:Generator_RowChangingName="empleadosRowChanging" msprop:Generator_RowEvHandlerName="empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="empleadosRowDeleted" msprop:Generator_RowClassName="empleadosRow" msprop:Generator_UserTableName="empleados" msprop:Generator_RowEvArgName="empleadosRowChangeEvent">
+        <xs:element name="empleados" msprop:Generator_TableClassName="empleadosDataTable" msprop:Generator_TableVarName="tableempleados" msprop:Generator_TablePropName="empleados" msprop:Generator_RowDeletingName="empleadosRowDeleting" msprop:Generator_RowChangingName="empleadosRowChanging" msprop:Generator_RowEvHandlerName="empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="empleadosRowDeleted" msprop:Generator_UserTableName="empleados" msprop:Generator_RowChangedName="empleadosRowChanged" msprop:Generator_RowEvArgName="empleadosRowChangeEvent" msprop:Generator_RowClassName="empleadosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdEmpleado" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdEmpleado" msprop:Generator_ColumnPropNameInRow="IdEmpleado" msprop:Generator_ColumnPropNameInTable="IdEmpleadoColumn" msprop:Generator_UserColumnName="IdEmpleado" type="xs:int" />
@@ -723,7 +723,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Ganancias" msprop:Generator_TableClassName="GananciasDataTable" msprop:Generator_TableVarName="tableGanancias" msprop:Generator_RowChangedName="GananciasRowChanged" msprop:Generator_TablePropName="Ganancias" msprop:Generator_RowDeletingName="GananciasRowDeleting" msprop:Generator_RowChangingName="GananciasRowChanging" msprop:Generator_RowEvHandlerName="GananciasRowChangeEventHandler" msprop:Generator_RowDeletedName="GananciasRowDeleted" msprop:Generator_RowClassName="GananciasRow" msprop:Generator_UserTableName="Ganancias" msprop:Generator_RowEvArgName="GananciasRowChangeEvent">
+        <xs:element name="Ganancias" msprop:Generator_TableClassName="GananciasDataTable" msprop:Generator_TableVarName="tableGanancias" msprop:Generator_TablePropName="Ganancias" msprop:Generator_RowDeletingName="GananciasRowDeleting" msprop:Generator_RowChangingName="GananciasRowChanging" msprop:Generator_RowEvHandlerName="GananciasRowChangeEventHandler" msprop:Generator_RowDeletedName="GananciasRowDeleted" msprop:Generator_UserTableName="Ganancias" msprop:Generator_RowChangedName="GananciasRowChanged" msprop:Generator_RowEvArgName="GananciasRowChangeEvent" msprop:Generator_RowClassName="GananciasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdGanancias" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdGanancias" msprop:Generator_ColumnPropNameInRow="IdGanancias" msprop:Generator_ColumnPropNameInTable="IdGananciasColumn" msprop:Generator_UserColumnName="IdGanancias" type="xs:int" />
@@ -745,7 +745,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Productos" msprop:Generator_TableClassName="ProductosDataTable" msprop:Generator_TableVarName="tableProductos" msprop:Generator_RowChangedName="ProductosRowChanged" msprop:Generator_TablePropName="Productos" msprop:Generator_RowDeletingName="ProductosRowDeleting" msprop:Generator_RowChangingName="ProductosRowChanging" msprop:Generator_RowEvHandlerName="ProductosRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductosRowDeleted" msprop:Generator_RowClassName="ProductosRow" msprop:Generator_UserTableName="Productos" msprop:Generator_RowEvArgName="ProductosRowChangeEvent">
+        <xs:element name="Productos" msprop:Generator_TableClassName="ProductosDataTable" msprop:Generator_TableVarName="tableProductos" msprop:Generator_TablePropName="Productos" msprop:Generator_RowDeletingName="ProductosRowDeleting" msprop:Generator_RowChangingName="ProductosRowChanging" msprop:Generator_RowEvHandlerName="ProductosRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductosRowDeleted" msprop:Generator_UserTableName="Productos" msprop:Generator_RowChangedName="ProductosRowChanged" msprop:Generator_RowEvArgName="ProductosRowChangeEvent" msprop:Generator_RowClassName="ProductosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idProducto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidProducto" msprop:Generator_ColumnPropNameInRow="idProducto" msprop:Generator_ColumnPropNameInTable="idProductoColumn" msprop:Generator_UserColumnName="idProducto" type="xs:int" />
@@ -781,7 +781,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Proveedor" msprop:Generator_TableClassName="ProveedorDataTable" msprop:Generator_TableVarName="tableProveedor" msprop:Generator_RowChangedName="ProveedorRowChanged" msprop:Generator_TablePropName="Proveedor" msprop:Generator_RowDeletingName="ProveedorRowDeleting" msprop:Generator_RowChangingName="ProveedorRowChanging" msprop:Generator_RowEvHandlerName="ProveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProveedorRowDeleted" msprop:Generator_RowClassName="ProveedorRow" msprop:Generator_UserTableName="Proveedor" msprop:Generator_RowEvArgName="ProveedorRowChangeEvent">
+        <xs:element name="Proveedor" msprop:Generator_TableClassName="ProveedorDataTable" msprop:Generator_TableVarName="tableProveedor" msprop:Generator_TablePropName="Proveedor" msprop:Generator_RowDeletingName="ProveedorRowDeleting" msprop:Generator_RowChangingName="ProveedorRowChanging" msprop:Generator_RowEvHandlerName="ProveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProveedorRowDeleted" msprop:Generator_UserTableName="Proveedor" msprop:Generator_RowChangedName="ProveedorRowChanged" msprop:Generator_RowEvArgName="ProveedorRowChangeEvent" msprop:Generator_RowClassName="ProveedorRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdProveedor_x0020_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdProveedor_" msprop:Generator_ColumnPropNameInRow="IdProveedor_" msprop:Generator_ColumnPropNameInTable="IdProveedor_Column" msprop:Generator_UserColumnName="IdProveedor " type="xs:int" />
@@ -816,7 +816,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tipofactura" msprop:Generator_TableClassName="tipofacturaDataTable" msprop:Generator_TableVarName="tabletipofactura" msprop:Generator_TablePropName="tipofactura" msprop:Generator_RowDeletingName="tipofacturaRowDeleting" msprop:Generator_RowChangingName="tipofacturaRowChanging" msprop:Generator_RowEvHandlerName="tipofacturaRowChangeEventHandler" msprop:Generator_RowDeletedName="tipofacturaRowDeleted" msprop:Generator_UserTableName="tipofactura" msprop:Generator_RowChangedName="tipofacturaRowChanged" msprop:Generator_RowEvArgName="tipofacturaRowChangeEvent" msprop:Generator_RowClassName="tipofacturaRow">
+        <xs:element name="tipofactura" msprop:Generator_TableClassName="tipofacturaDataTable" msprop:Generator_TableVarName="tabletipofactura" msprop:Generator_RowChangedName="tipofacturaRowChanged" msprop:Generator_TablePropName="tipofactura" msprop:Generator_RowDeletingName="tipofacturaRowDeleting" msprop:Generator_RowChangingName="tipofacturaRowChanging" msprop:Generator_RowEvHandlerName="tipofacturaRowChangeEventHandler" msprop:Generator_RowDeletedName="tipofacturaRowDeleted" msprop:Generator_RowClassName="tipofacturaRow" msprop:Generator_UserTableName="tipofactura" msprop:Generator_RowEvArgName="tipofacturaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idTipofactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidTipofactura" msprop:Generator_ColumnPropNameInRow="idTipofactura" msprop:Generator_ColumnPropNameInTable="idTipofacturaColumn" msprop:Generator_UserColumnName="idTipofactura" type="xs:int" />
@@ -830,7 +830,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pagos" msprop:Generator_TableClassName="pagosDataTable" msprop:Generator_TableVarName="tablepagos" msprop:Generator_TablePropName="pagos" msprop:Generator_RowDeletingName="pagosRowDeleting" msprop:Generator_RowChangingName="pagosRowChanging" msprop:Generator_RowEvHandlerName="pagosRowChangeEventHandler" msprop:Generator_RowDeletedName="pagosRowDeleted" msprop:Generator_UserTableName="pagos" msprop:Generator_RowChangedName="pagosRowChanged" msprop:Generator_RowEvArgName="pagosRowChangeEvent" msprop:Generator_RowClassName="pagosRow">
+        <xs:element name="pagos" msprop:Generator_TableClassName="pagosDataTable" msprop:Generator_TableVarName="tablepagos" msprop:Generator_RowChangedName="pagosRowChanged" msprop:Generator_TablePropName="pagos" msprop:Generator_RowDeletingName="pagosRowDeleting" msprop:Generator_RowChangingName="pagosRowChanging" msprop:Generator_RowEvHandlerName="pagosRowChangeEventHandler" msprop:Generator_RowDeletedName="pagosRowDeleted" msprop:Generator_RowClassName="pagosRow" msprop:Generator_UserTableName="pagos" msprop:Generator_RowEvArgName="pagosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idPago" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidPago" msprop:Generator_ColumnPropNameInRow="idPago" msprop:Generator_ColumnPropNameInTable="idPagoColumn" msprop:Generator_UserColumnName="idPago" type="xs:int" />
@@ -844,7 +844,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="compras" msprop:Generator_TableClassName="comprasDataTable" msprop:Generator_TableVarName="tablecompras" msprop:Generator_TablePropName="compras" msprop:Generator_RowDeletingName="comprasRowDeleting" msprop:Generator_RowChangingName="comprasRowChanging" msprop:Generator_RowEvHandlerName="comprasRowChangeEventHandler" msprop:Generator_RowDeletedName="comprasRowDeleted" msprop:Generator_UserTableName="compras" msprop:Generator_RowChangedName="comprasRowChanged" msprop:Generator_RowEvArgName="comprasRowChangeEvent" msprop:Generator_RowClassName="comprasRow">
+        <xs:element name="compras" msprop:Generator_TableClassName="comprasDataTable" msprop:Generator_TableVarName="tablecompras" msprop:Generator_RowChangedName="comprasRowChanged" msprop:Generator_TablePropName="compras" msprop:Generator_RowDeletingName="comprasRowDeleting" msprop:Generator_RowChangingName="comprasRowChanging" msprop:Generator_RowEvHandlerName="comprasRowChangeEventHandler" msprop:Generator_RowDeletedName="comprasRowDeleted" msprop:Generator_RowClassName="comprasRow" msprop:Generator_UserTableName="compras" msprop:Generator_RowEvArgName="comprasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdCompra" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdCompra" msprop:Generator_ColumnPropNameInRow="IdCompra" msprop:Generator_ColumnPropNameInTable="IdCompraColumn" msprop:Generator_UserColumnName="IdCompra" type="xs:int" />
@@ -863,7 +863,7 @@ FROM            dcompras INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="dcompras" msprop:Generator_TableClassName="dcomprasDataTable" msprop:Generator_TableVarName="tabledcompras" msprop:Generator_TablePropName="dcompras" msprop:Generator_RowDeletingName="dcomprasRowDeleting" msprop:Generator_RowChangingName="dcomprasRowChanging" msprop:Generator_RowEvHandlerName="dcomprasRowChangeEventHandler" msprop:Generator_RowDeletedName="dcomprasRowDeleted" msprop:Generator_UserTableName="dcompras" msprop:Generator_RowChangedName="dcomprasRowChanged" msprop:Generator_RowEvArgName="dcomprasRowChangeEvent" msprop:Generator_RowClassName="dcomprasRow">
+        <xs:element name="dcompras" msprop:Generator_TableClassName="dcomprasDataTable" msprop:Generator_TableVarName="tabledcompras" msprop:Generator_RowChangedName="dcomprasRowChanged" msprop:Generator_TablePropName="dcompras" msprop:Generator_RowDeletingName="dcomprasRowDeleting" msprop:Generator_RowChangingName="dcomprasRowChanging" msprop:Generator_RowEvHandlerName="dcomprasRowChangeEventHandler" msprop:Generator_RowDeletedName="dcomprasRowDeleted" msprop:Generator_RowClassName="dcomprasRow" msprop:Generator_UserTableName="dcompras" msprop:Generator_RowEvArgName="dcomprasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idDetalle" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidDetalle" msprop:Generator_ColumnPropNameInRow="idDetalle" msprop:Generator_ColumnPropNameInTable="idDetalleColumn" msprop:Generator_UserColumnName="idDetalle" type="xs:int" />
@@ -877,6 +877,8 @@ FROM            dcompras INNER JOIN
         <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="idDetalle" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidDetalle" msprop:Generator_ColumnPropNameInRow="idDetalle" msprop:Generator_ColumnPropNameInTable="idDetalleColumn" msprop:Generator_UserColumnName="idDetalle" type="xs:int" />
+              <xs:element name="IdCompra" msprop:Generator_ColumnVarNameInTable="columnIdCompra" msprop:Generator_ColumnPropNameInRow="IdCompra" msprop:Generator_ColumnPropNameInTable="IdCompraColumn" msprop:Generator_UserColumnName="IdCompra" type="xs:int" />
               <xs:element name="idProducto" msprop:Generator_ColumnVarNameInTable="columnidProducto" msprop:Generator_ColumnPropNameInRow="idProducto" msprop:Generator_ColumnPropNameInTable="idProductoColumn" msprop:Generator_UserColumnName="idProducto" type="xs:int" />
               <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" />
               <xs:element name="precio" msprop:Generator_ColumnVarNameInTable="columnprecio" msprop:Generator_ColumnPropNameInRow="precio" msprop:Generator_ColumnPropNameInTable="precioColumn" msprop:Generator_UserColumnName="precio" type="xs:decimal" />
@@ -901,14 +903,6 @@ FROM            dcompras INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="medidas" msprop:Generator_ColumnVarNameInTable="columnmedidas" msprop:Generator_ColumnPropNameInRow="medidas" msprop:Generator_ColumnPropNameInTable="medidasColumn" msprop:Generator_UserColumnName="medidas" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="35" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="IdCompra" msprop:Generator_ColumnVarNameInTable="columnIdCompra" msprop:Generator_ColumnPropNameInRow="IdCompra" msprop:Generator_ColumnPropNameInTable="IdCompraColumn" msprop:Generator_UserColumnName="IdCompra" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -954,15 +948,19 @@ FROM            dcompras INNER JOIN
       <xs:selector xpath=".//mstns:dcompras" />
       <xs:field xpath="mstns:idDetalle" />
     </xs:unique>
+    <xs:unique name="DataTable1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:idDetalle" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Productos_Categorias" msdata:parent="Categorias" msdata:child="Productos" msdata:parentkey="idCategoria" msdata:childkey="idCategoria" msprop:Generator_UserChildTable="Productos" msprop:Generator_ChildPropName="GetProductosRows" msprop:Generator_UserRelationName="FK_Productos_Categorias" msprop:Generator_RelationVarName="relationFK_Productos_Categorias" msprop:Generator_UserParentTable="Categorias" msprop:Generator_ParentPropName="CategoriasRow" />
-      <msdata:Relationship name="FK_compras_pagos" msdata:parent="pagos" msdata:child="compras" msdata:parentkey="idPago" msdata:childkey="idPago" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_pagos" msprop:Generator_ParentPropName="pagosRow" msprop:Generator_RelationVarName="relationFK_compras_pagos" msprop:Generator_UserParentTable="pagos" />
-      <msdata:Relationship name="FK_compras_Proveedor" msdata:parent="Proveedor" msdata:child="compras" msdata:parentkey="IdProveedor_x0020_" msdata:childkey="IdProveedor" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_Proveedor" msprop:Generator_ParentPropName="ProveedorRow" msprop:Generator_RelationVarName="relationFK_compras_Proveedor" msprop:Generator_UserParentTable="Proveedor" />
-      <msdata:Relationship name="FK_compras_tipofactura" msdata:parent="tipofactura" msdata:child="compras" msdata:parentkey="idTipofactura" msdata:childkey="idTipofactura" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_tipofactura" msprop:Generator_ParentPropName="tipofacturaRow" msprop:Generator_RelationVarName="relationFK_compras_tipofactura" msprop:Generator_UserParentTable="tipofactura" />
-      <msdata:Relationship name="FK_dcompras_" msdata:parent="Productos" msdata:child="dcompras" msdata:parentkey="idProducto" msdata:childkey="idProducto" msprop:Generator_UserChildTable="dcompras" msprop:Generator_ChildPropName="GetdcomprasRows" msprop:Generator_UserRelationName="FK_dcompras_" msprop:Generator_ParentPropName="ProductosRow" msprop:Generator_RelationVarName="relationFK_dcompras_" msprop:Generator_UserParentTable="Productos" />
-      <msdata:Relationship name="FK_dcompras_compras" msdata:parent="compras" msdata:child="dcompras" msdata:parentkey="IdCompra" msdata:childkey="IdCompra" msprop:Generator_UserChildTable="dcompras" msprop:Generator_ChildPropName="GetdcomprasRows" msprop:Generator_UserRelationName="FK_dcompras_compras" msprop:Generator_ParentPropName="comprasRow" msprop:Generator_RelationVarName="relationFK_dcompras_compras" msprop:Generator_UserParentTable="compras" />
+      <msdata:Relationship name="FK_Productos_Categorias" msdata:parent="Categorias" msdata:child="Productos" msdata:parentkey="idCategoria" msdata:childkey="idCategoria" msprop:Generator_UserChildTable="Productos" msprop:Generator_ChildPropName="GetProductosRows" msprop:Generator_UserRelationName="FK_Productos_Categorias" msprop:Generator_ParentPropName="CategoriasRow" msprop:Generator_RelationVarName="relationFK_Productos_Categorias" msprop:Generator_UserParentTable="Categorias" />
+      <msdata:Relationship name="FK_compras_pagos" msdata:parent="pagos" msdata:child="compras" msdata:parentkey="idPago" msdata:childkey="idPago" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_pagos" msprop:Generator_RelationVarName="relationFK_compras_pagos" msprop:Generator_UserParentTable="pagos" msprop:Generator_ParentPropName="pagosRow" />
+      <msdata:Relationship name="FK_compras_Proveedor" msdata:parent="Proveedor" msdata:child="compras" msdata:parentkey="IdProveedor_x0020_" msdata:childkey="IdProveedor" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_Proveedor" msprop:Generator_RelationVarName="relationFK_compras_Proveedor" msprop:Generator_UserParentTable="Proveedor" msprop:Generator_ParentPropName="ProveedorRow" />
+      <msdata:Relationship name="FK_compras_tipofactura" msdata:parent="tipofactura" msdata:child="compras" msdata:parentkey="idTipofactura" msdata:childkey="idTipofactura" msprop:Generator_UserChildTable="compras" msprop:Generator_ChildPropName="GetcomprasRows" msprop:Generator_UserRelationName="FK_compras_tipofactura" msprop:Generator_RelationVarName="relationFK_compras_tipofactura" msprop:Generator_UserParentTable="tipofactura" msprop:Generator_ParentPropName="tipofacturaRow" />
+      <msdata:Relationship name="FK_dcompras_" msdata:parent="Productos" msdata:child="dcompras" msdata:parentkey="idProducto" msdata:childkey="idProducto" msprop:Generator_UserChildTable="dcompras" msprop:Generator_ChildPropName="GetdcomprasRows" msprop:Generator_UserRelationName="FK_dcompras_" msprop:Generator_RelationVarName="relationFK_dcompras_" msprop:Generator_UserParentTable="Productos" msprop:Generator_ParentPropName="ProductosRow" />
+      <msdata:Relationship name="FK_dcompras_compras" msdata:parent="compras" msdata:child="dcompras" msdata:parentkey="IdCompra" msdata:childkey="IdCompra" msprop:Generator_UserChildTable="dcompras" msprop:Generator_ChildPropName="GetdcomprasRows" msprop:Generator_UserRelationName="FK_dcompras_compras" msprop:Generator_RelationVarName="relationFK_dcompras_compras" msprop:Generator_UserParentTable="compras" msprop:Generator_ParentPropName="comprasRow" />
       <msdata:Relationship name="FK_dcompras_1" msdata:parent="DataTable1" msdata:child="dcompras" msdata:parentkey="idProducto" msdata:childkey="idProducto" msprop:Generator_UserChildTable="dcompras" msprop:Generator_ChildPropName="GetdcomprasRows" msprop:Generator_UserRelationName="FK_dcompras_1" msprop:Generator_RelationVarName="relationFK_dcompras_1" msprop:Generator_UserParentTable="DataTable1" msprop:Generator_ParentPropName="DataTable1Row" />
     </xs:appinfo>
   </xs:annotation>

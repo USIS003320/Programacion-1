@@ -3815,6 +3815,10 @@ Partial Public Class db_sistemaDataSet
     Partial Public Class DataTable1DataTable
         Inherits Global.System.Data.TypedTableBase(Of DataTable1Row)
         
+        Private columnidDetalle As Global.System.Data.DataColumn
+        
+        Private columnIdCompra As Global.System.Data.DataColumn
+        
         Private columnidProducto As Global.System.Data.DataColumn
         
         Private columncantidad As Global.System.Data.DataColumn
@@ -3826,10 +3830,6 @@ Partial Public Class db_sistemaDataSet
         Private columnnombre As Global.System.Data.DataColumn
         
         Private columnpedidos As Global.System.Data.DataColumn
-        
-        Private columnmedidas As Global.System.Data.DataColumn
-        
-        Private columnIdCompra As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -3865,6 +3865,22 @@ Partial Public Class db_sistemaDataSet
             MyBase.New(info, context)
             Me.InitVars
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property idDetalleColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnidDetalle
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property IdCompraColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnIdCompra
+            End Get
+        End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -3915,22 +3931,6 @@ Partial Public Class db_sistemaDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property medidasColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnmedidas
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property IdCompraColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnIdCompra
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -3967,12 +3967,18 @@ Partial Public Class db_sistemaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddDataTable1Row(ByVal idProducto As Integer, ByVal cantidad As Integer, ByVal precio As Decimal, ByVal codigo As String, ByVal nombre As String, ByVal pedidos As String, ByVal medidas As String, ByVal IdCompra As Integer) As DataTable1Row
+        Public Overloads Function AddDataTable1Row(ByVal IdCompra As Integer, ByVal idProducto As Integer, ByVal cantidad As Integer, ByVal precio As Decimal, ByVal codigo As String, ByVal nombre As String, ByVal pedidos As String) As DataTable1Row
             Dim rowDataTable1Row As DataTable1Row = CType(Me.NewRow,DataTable1Row)
-            Dim columnValuesArray() As Object = New Object() {idProducto, cantidad, precio, codigo, nombre, pedidos, medidas, IdCompra}
+            Dim columnValuesArray() As Object = New Object() {Nothing, IdCompra, idProducto, cantidad, precio, codigo, nombre, pedidos}
             rowDataTable1Row.ItemArray = columnValuesArray
             Me.Rows.Add(rowDataTable1Row)
             Return rowDataTable1Row
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function FindByidDetalle(ByVal idDetalle As Integer) As DataTable1Row
+            Return CType(Me.Rows.Find(New Object() {idDetalle}),DataTable1Row)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3992,19 +3998,23 @@ Partial Public Class db_sistemaDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
+            Me.columnidDetalle = MyBase.Columns("idDetalle")
+            Me.columnIdCompra = MyBase.Columns("IdCompra")
             Me.columnidProducto = MyBase.Columns("idProducto")
             Me.columncantidad = MyBase.Columns("cantidad")
             Me.columnprecio = MyBase.Columns("precio")
             Me.columncodigo = MyBase.Columns("codigo")
             Me.columnnombre = MyBase.Columns("nombre")
             Me.columnpedidos = MyBase.Columns("pedidos")
-            Me.columnmedidas = MyBase.Columns("medidas")
-            Me.columnIdCompra = MyBase.Columns("IdCompra")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitClass()
+            Me.columnidDetalle = New Global.System.Data.DataColumn("idDetalle", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnidDetalle)
+            Me.columnIdCompra = New Global.System.Data.DataColumn("IdCompra", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnIdCompra)
             Me.columnidProducto = New Global.System.Data.DataColumn("idProducto", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnidProducto)
             Me.columncantidad = New Global.System.Data.DataColumn("cantidad", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
@@ -4017,10 +4027,14 @@ Partial Public Class db_sistemaDataSet
             MyBase.Columns.Add(Me.columnnombre)
             Me.columnpedidos = New Global.System.Data.DataColumn("pedidos", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpedidos)
-            Me.columnmedidas = New Global.System.Data.DataColumn("medidas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnmedidas)
-            Me.columnIdCompra = New Global.System.Data.DataColumn("IdCompra", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnIdCompra)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidDetalle}, true))
+            Me.columnidDetalle.AutoIncrement = true
+            Me.columnidDetalle.AutoIncrementSeed = -1
+            Me.columnidDetalle.AutoIncrementStep = -1
+            Me.columnidDetalle.AllowDBNull = false
+            Me.columnidDetalle.ReadOnly = true
+            Me.columnidDetalle.Unique = true
+            Me.columnIdCompra.AllowDBNull = false
             Me.columnidProducto.AllowDBNull = false
             Me.columncantidad.AllowDBNull = false
             Me.columnprecio.AllowDBNull = false
@@ -4030,8 +4044,6 @@ Partial Public Class db_sistemaDataSet
             Me.columnnombre.MaxLength = 75
             Me.columnpedidos.AllowDBNull = false
             Me.columnpedidos.MaxLength = 150
-            Me.columnmedidas.MaxLength = 35
-            Me.columnIdCompra.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5028,6 +5040,28 @@ Partial Public Class db_sistemaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property idDetalle() As Integer
+            Get
+                Return CType(Me(Me.tableDataTable1.idDetalleColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableDataTable1.idDetalleColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property IdCompra() As Integer
+            Get
+                Return CType(Me(Me.tableDataTable1.IdCompraColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableDataTable1.IdCompraColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property idProducto() As Integer
             Get
                 Return CType(Me(Me.tableDataTable1.idProductoColumn),Integer)
@@ -5091,44 +5125,6 @@ Partial Public Class db_sistemaDataSet
                 Me(Me.tableDataTable1.pedidosColumn) = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property medidas() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableDataTable1.medidasColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'medidas' de la tabla 'DataTable1' es DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableDataTable1.medidasColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property IdCompra() As Integer
-            Get
-                Return CType(Me(Me.tableDataTable1.IdCompraColumn),Integer)
-            End Get
-            Set
-                Me(Me.tableDataTable1.IdCompraColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function IsmedidasNull() As Boolean
-            Return Me.IsNull(Me.tableDataTable1.medidasColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub SetmedidasNull()
-            Me(Me.tableDataTable1.medidasColumn) = Global.System.Convert.DBNull
-        End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -9308,14 +9304,14 @@ Namespace db_sistemaDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "DataTable1"
+            tableMapping.ColumnMappings.Add("idDetalle", "idDetalle")
+            tableMapping.ColumnMappings.Add("IdCompra", "IdCompra")
             tableMapping.ColumnMappings.Add("idProducto", "idProducto")
             tableMapping.ColumnMappings.Add("cantidad", "cantidad")
             tableMapping.ColumnMappings.Add("precio", "precio")
             tableMapping.ColumnMappings.Add("codigo", "codigo")
             tableMapping.ColumnMappings.Add("nombre", "nombre")
             tableMapping.ColumnMappings.Add("pedidos", "pedidos")
-            tableMapping.ColumnMappings.Add("medidas", "medidas")
-            tableMapping.ColumnMappings.Add("IdCompra", "IdCompra")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
         
@@ -9332,10 +9328,10 @@ Namespace db_sistemaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        dcompras.idProducto, dcompras.cantidad, dcompras.precio, Productos."& _ 
-                "codigo, Productos.nombre, Productos.pedidos, Productos.medidas, dcompras.IdCompr"& _ 
-                "a"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            dcompras INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Productos ON dc"& _ 
-                "ompras.idProducto = Productos.idProducto"
+            Me._commandCollection(0).CommandText = "SELECT        dcompras.idDetalle, dcompras.IdCompra, dcompras.idProducto, dcompra"& _ 
+                "s.cantidad, dcompras.precio, Productos.codigo, Productos.nombre, Productos.pedid"& _ 
+                "os"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            dcompras INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Productos ON d"& _ 
+                "compras.idProducto = Productos.idProducto"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -9343,7 +9339,7 @@ Namespace db_sistemaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function FillDcomprasProductos(ByVal dataTable As db_sistemaDataSet.DataTable1DataTable) As Integer
+        Public Overloads Overridable Function FilldcomprasProductos(ByVal dataTable As db_sistemaDataSet.DataTable1DataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -9356,7 +9352,7 @@ Namespace db_sistemaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetDataDcomprasProductos() As db_sistemaDataSet.DataTable1DataTable
+        Public Overloads Overridable Function GetDatadcomprasProductos() As db_sistemaDataSet.DataTable1DataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As db_sistemaDataSet.DataTable1DataTable = New db_sistemaDataSet.DataTable1DataTable()
             Me.Adapter.Fill(dataTable)

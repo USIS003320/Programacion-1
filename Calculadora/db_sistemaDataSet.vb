@@ -31,6 +31,10 @@
         End Sub
 
     End Class
+
+    Friend Function dcomprasproductos() As Object
+        Throw New NotImplementedException()
+    End Function
 End Class
 
 Namespace db_sistemaDataSetTableAdapters

@@ -27,4 +27,7 @@
 
     End Sub
 
+    Private Function DcomprasproductosTableAdapter() As Object
+        Throw New NotImplementedException()
+    End Function
 End Class
