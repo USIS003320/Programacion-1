@@ -45,6 +45,23 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "Ganancias")
 
+        miCommand.CommandText = "select * from compras"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "compras")
+
+        miCommand.CommandText = "select * from dcompras"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "dcompras")
+
+        miCommand.CommandText = "select * from pagos"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "pagos")
+
+        miCommand.CommandText = "select * from tipofactura"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "tipofactura")
+
+
         Return ds
     End Function
     Public Function mantenimientoDatosEmpleado(ByVal datos As String(), ByVal accion As String)
@@ -124,6 +141,23 @@ Public Class db_conexion
                 sql = "UPDATE Ganancias SET idProducto='" + datos(1) + "',PreciodeVenta='" + datos(2) + "',PreciodeCompra='" + datos(3) + "' WHERE idGanancias='" + datos(0) + "'"
             Case "eliminar"
                 sql = "DELETE FROM Ganancias WHERE idGanancias='" + datos(0) + "'"
+        End Select
+        If executesql(sql) > 0 Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosCompras(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO compras (nfactura, Fecha_compra,fecha_hora_registro,idTipofactura,idPago,idProveedor) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
+            Case "modificar"
+                sql = "UPDATE compras SET nfactura='" + datos(1) + "',fecha_compra='" + datos(2) + "',fecha_hora_registro='" + datos(3) + "',idTipofactura='" + datos(4) + "',idPago='" + datos(5) + "',idProveedor='" + datos(5) + "' WHERE idCompra='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM compras WHERE idCompra='" + datos(0) + "'"
         End Select
         If executesql(sql) > 0 Then
             msg = "Accion terminada con exito"

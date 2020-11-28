@@ -143,10 +143,10 @@
     <Compile Include="frmBuscarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmcompras.Designer.vb">
-      <DependentUpon>frmcompras.vb</DependentUpon>
+    <Compile Include="frmCompras.Designer.vb">
+      <DependentUpon>frmCompras.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmcompras.vb">
+    <Compile Include="frmCompras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmpleados.Designer.vb">
@@ -212,8 +212,8 @@
     <EmbeddedResource Include="frmBuscarProveedor.resx">
       <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmcompras.resx">
-      <DependentUpon>frmcompras.vb</DependentUpon>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.vb</DependentUpon>
