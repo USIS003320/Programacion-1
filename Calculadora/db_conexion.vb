@@ -106,7 +106,7 @@ Public Class db_conexion
             Case "modificar"
                 sql = "UPDATE Proveedor SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',direccion='" + datos(3) + "',telefono='" + datos(4) + "' WHERE idProveedor='" + datos(0) + "'"
             Case "eliminar"
-                sql = "DELETE FROM Proveedor WHERE idProveedor='" + datos(0) + "'"
+                sql = "DELETE FROM Proveedor WHERE idProveedor ='" + datos(0) + "'"
         End Select
         If (executesql(sql) > 0) Then
             msg = "Accion terminada con exito"

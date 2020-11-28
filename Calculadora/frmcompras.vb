@@ -9,17 +9,17 @@
         obtenerDatos()
     End Sub
 
-    Sub obtenerdatos()
+    Sub obtenerDatos()
         dataTable = objConexion.obtenerDatos().Tables("compras")
         dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idCompra")}
 
         cboProveedor.DataSource = objConexion.obtenerDatos().Tables("Proveedor").DefaultView()
-        cboProveedor.DisplayMember = "proveedor"
-        cboProveedor.ValueMember = "Proveedor.idProveedor"
+        cboProveedor.DisplayMember = "nombre"
+        cboProveedor.ValueMember = "nombre.IdProveedor "
 
-        cboTipoFactura.DataSource = objConexion.obtenerDatos().Tables("tipofactura").DefaultView()
-        cboProveedor.DisplayMember = "Tipofactura"
-        cboProveedor.ValueMember = "tipofactura.idTipofactura"
+        'cboTipoFactura.DataSource = objConexion.obtenerDatos().Tables("tipofactura").DefaultView()
+        'cboProveedor.DisplayMember = "Tipofactura"
+        'cboProveedor.ValueMember = "tipofactura.idTipofactura"
 
         mostrarDatos()
     End Sub
@@ -28,7 +28,7 @@
 
             Me.Tag = dataTable.Rows(posicion).ItemArray(0).ToString()
 
-            cboProveedor.SelectedValue = dataTable.Rows(posicion).ItemArray(1).ToString()
+            cboProveedor.SelectedValue = dataTable.Rows(posicion).ItemArray(3).ToString()
             cboFormapago.SelectedValue = dataTable.Rows(posicion).ItemArray(2).ToString()
             cboTipoFactura.SelectedValue = dataTable.Rows(posicion).ItemArray(3).ToString()
             cboFormapago.SelectedValue = dataTable.Rows(posicion).ItemArray(4).ToString()
@@ -93,7 +93,7 @@
             }, accion)
             MessageBox.Show(msg, "Registro de compra", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            obtenerdatos()
+            obtenerDatos()
             HabDescontroles(True)
             btnAgregarCompra.Text = "Nuevo"
             btnModificarCompra.Text = "Modificar"
@@ -107,7 +107,7 @@
             accion = "Modificar"
             HabDescontroles(False)
         Else
-            obtenerdatos()
+            obtenerDatos()
             HabDescontroles(True)
             btnAgregarCompra.Text = "Nuevo"
             btnModificarCompra.Text = "Modificar"
@@ -122,7 +122,7 @@
                 If posicion > 0 Then
                     posicion -= 1
                 End If
-                obtenerdatos()
+                obtenerDatos()
                 mostrarDatos()
             End If
         End If
