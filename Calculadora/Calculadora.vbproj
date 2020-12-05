@@ -167,6 +167,12 @@
     <Compile Include="frmGanancias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadoEmpleados.Designer.vb">
+      <DependentUpon>frmListadoEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmProductos.Designer.vb">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
