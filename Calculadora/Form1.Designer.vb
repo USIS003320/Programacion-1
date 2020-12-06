@@ -33,39 +33,43 @@ Partial Class frmMenu
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturacionCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoDeEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
-        Me.MenuStrip1.Size = New System.Drawing.Size(913, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(913, 30)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ArchivoToolStripMenuItem
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Archi
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 22)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(84, 28)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Salir
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ArqueoToolStripMenuItem, Me.GananciasToolStripMenuItem})
+        Me.EmpresaToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.iconfinder_Home_56264
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(70, 22)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(94, 28)
         Me.EmpresaToolStripMenuItem.Text = "EMPRESA"
         '
         'EmpleadosToolStripMenuItem
@@ -103,8 +107,9 @@ Partial Class frmMenu
         'InventarioToolStripMenuItem
         '
         Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductoToolStripMenuItem, Me.FacturacionCompraToolStripMenuItem})
+        Me.InventarioToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.iconfinder_ilustracoes_04_10_1519778
         Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(85, 22)
+        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(109, 28)
         Me.InventarioToolStripMenuItem.Text = "INVENTARIO"
         '
         'ProductoToolStripMenuItem
@@ -112,14 +117,27 @@ Partial Class frmMenu
         Me.ProductoToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Productos
         Me.ProductoToolStripMenuItem.Name = "ProductoToolStripMenuItem"
         Me.ProductoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(190, 30)
+        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
         'FacturacionCompraToolStripMenuItem
         '
         Me.FacturacionCompraToolStripMenuItem.Name = "FacturacionCompraToolStripMenuItem"
-        Me.FacturacionCompraToolStripMenuItem.Size = New System.Drawing.Size(190, 30)
+        Me.FacturacionCompraToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
         Me.FacturacionCompraToolStripMenuItem.Text = "Facturacion Compra"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeEmpleadosToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(72, 28)
+        Me.ReportesToolStripMenuItem.Text = "REPORTES"
+        '
+        'ListadoDeEmpleadosToolStripMenuItem
+        '
+        Me.ListadoDeEmpleadosToolStripMenuItem.Name = "ListadoDeEmpleadosToolStripMenuItem"
+        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.ListadoDeEmpleadosToolStripMenuItem.Text = "Listado de Empleados"
         '
         'frmMenu
         '
@@ -150,4 +168,6 @@ Partial Class frmMenu
     Friend WithEvents ProductoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GananciasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FacturacionCompraToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListadoDeEmpleadosToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -22,6 +22,11 @@ Calculadora
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Calculadora.My.Resources.Resources.Archi">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Calculadora.My.Resources.Resources.Arqueo">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -38,6 +43,16 @@ Calculadora
 </summary>
 </member>
 <member name="P:Calculadora.My.Resources.Resources.Empleado">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Calculadora.My.Resources.Resources.iconfinder_Home_56264">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Calculadora.My.Resources.Resources.iconfinder_ilustracoes_04_10_1519778">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
