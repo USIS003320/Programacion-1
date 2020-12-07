@@ -40,12 +40,13 @@ Partial Class frmMenu
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackgroundImage = Global.Calculadora.My.Resources.Resources.Lacteos
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
-        Me.MenuStrip1.Size = New System.Drawing.Size(913, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(916, 30)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -129,12 +130,14 @@ Partial Class frmMenu
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeEmpleadosToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Report
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(72, 28)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(96, 28)
         Me.ReportesToolStripMenuItem.Text = "REPORTES"
         '
         'ListadoDeEmpleadosToolStripMenuItem
         '
+        Me.ListadoDeEmpleadosToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Employee
         Me.ListadoDeEmpleadosToolStripMenuItem.Name = "ListadoDeEmpleadosToolStripMenuItem"
         Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
         Me.ListadoDeEmpleadosToolStripMenuItem.Text = "Listado de Empleados"
@@ -143,7 +146,9 @@ Partial Class frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(913, 487)
+        Me.BackgroundImage = Global.Calculadora.My.Resources.Resources.lacteos_2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(916, 512)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1

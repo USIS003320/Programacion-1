@@ -47,6 +47,11 @@ Calculadora
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Calculadora.My.Resources.Resources.Employee">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Calculadora.My.Resources.Resources.iconfinder_Home_56264">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -57,12 +62,27 @@ Calculadora
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Calculadora.My.Resources.Resources.Lacteos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Calculadora.My.Resources.Resources.lacteos_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Calculadora.My.Resources.Resources.Productos">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Calculadora.My.Resources.Resources.Proveedor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Calculadora.My.Resources.Resources.Report">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

@@ -303,6 +303,10 @@
       <DependentUpon>db_sistema.mdf</DependentUpon>
     </Content>
     <Content Include="iconfinder_Client_Male_Dark_80823.ico" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\Employee.png" />
+    <None Include="Resources\Lacteos.jpg" />
+    <None Include="Resources\lacteos 2.jpg" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
