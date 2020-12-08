@@ -185,10 +185,22 @@
     <Compile Include="frmGanancias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frminformearqueo.Designer.vb">
+      <DependentUpon>frminformearqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminformearqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmlistadoempleados.Designer.vb">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
     </Compile>
     <Compile Include="frmlistadoempleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoProveedor.Designer.vb">
+      <DependentUpon>frmListadoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProductos.Designer.vb">
@@ -254,8 +266,14 @@
     <EmbeddedResource Include="frmGanancias.resx">
       <DependentUpon>frmGanancias.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frminformearqueo.resx">
+      <DependentUpon>frminformearqueo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlistadoempleados.resx">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoProveedor.resx">
+      <DependentUpon>frmListadoProveedor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
@@ -263,7 +281,9 @@
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="infomearqueo.rdlc" />
     <EmbeddedResource Include="listadoempleados.rdlc" />
+    <EmbeddedResource Include="ListadoProveedores.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
