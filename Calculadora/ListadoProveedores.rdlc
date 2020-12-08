@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Listado de Proveedoredes</Value>
+                <Value>Listado de Proveedores</Value>
                 <Style>
                   <FontSize>20pt</FontSize>
                   <Color>Red</Color>
@@ -23,7 +23,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>2.06057cm</Top>
-        <Left>7.82849cm</Left>
+        <Left>6.55849cm</Left>
         <Height>0.89104cm</Height>
         <Width>8.92938cm</Width>
         <Style>
@@ -182,6 +182,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>

@@ -35,8 +35,8 @@ Partial Class frmMenu
         Me.FacturacionCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListadoDeProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformeArqueoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InformeProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -131,7 +131,7 @@ Partial Class frmMenu
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeEmpleadosToolStripMenuItem, Me.ListadoDeProveedoresToolStripMenuItem, Me.InformeArqueoToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeEmpleadosToolStripMenuItem, Me.InformeArqueoToolStripMenuItem, Me.InformeProductosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Report
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(96, 28)
@@ -141,20 +141,20 @@ Partial Class frmMenu
         '
         Me.ListadoDeEmpleadosToolStripMenuItem.Image = Global.Calculadora.My.Resources.Resources.Employee
         Me.ListadoDeEmpleadosToolStripMenuItem.Name = "ListadoDeEmpleadosToolStripMenuItem"
-        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(204, 30)
+        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(197, 30)
         Me.ListadoDeEmpleadosToolStripMenuItem.Text = "Listado de Empleados"
-        '
-        'ListadoDeProveedoresToolStripMenuItem
-        '
-        Me.ListadoDeProveedoresToolStripMenuItem.Name = "ListadoDeProveedoresToolStripMenuItem"
-        Me.ListadoDeProveedoresToolStripMenuItem.Size = New System.Drawing.Size(204, 30)
-        Me.ListadoDeProveedoresToolStripMenuItem.Text = "Listado de Proveedores"
         '
         'InformeArqueoToolStripMenuItem
         '
         Me.InformeArqueoToolStripMenuItem.Name = "InformeArqueoToolStripMenuItem"
-        Me.InformeArqueoToolStripMenuItem.Size = New System.Drawing.Size(204, 30)
+        Me.InformeArqueoToolStripMenuItem.Size = New System.Drawing.Size(197, 30)
         Me.InformeArqueoToolStripMenuItem.Text = "Informe arqueo"
+        '
+        'InformeProductosToolStripMenuItem
+        '
+        Me.InformeProductosToolStripMenuItem.Name = "InformeProductosToolStripMenuItem"
+        Me.InformeProductosToolStripMenuItem.Size = New System.Drawing.Size(197, 30)
+        Me.InformeProductosToolStripMenuItem.Text = "Informe Productos"
         '
         'frmMenu
         '
@@ -189,6 +189,6 @@ Partial Class frmMenu
     Friend WithEvents FacturacionCompraToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeEmpleadosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListadoDeProveedoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InformeArqueoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InformeProductosToolStripMenuItem As ToolStripMenuItem
 End Class

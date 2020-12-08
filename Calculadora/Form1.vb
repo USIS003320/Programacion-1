@@ -45,7 +45,7 @@
         objlistadodeempleados.Show()
     End Sub
 
-    Private Sub ListadoDeProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeProveedoresToolStripMenuItem.Click
+    Private Sub ListadoDeProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim objListadoProveedores As New frmListadoProveedor
         objListadoProveedores.MdiParent = Me
         objListadoProveedores.Show()
@@ -55,5 +55,11 @@
         Dim objInformeArqueo As New frminformearqueo
         objInformeArqueo.MdiParent = Me
         objInformeArqueo.Show()
+    End Sub
+
+    Private Sub InformeProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InformeProductosToolStripMenuItem.Click
+        Dim objinformeProductos As New frminformeProductos
+        objinformeProductos.MdiParent = Me
+        objinformeProductos.Show()
     End Sub
 End Class

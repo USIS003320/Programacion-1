@@ -191,6 +191,12 @@
     <Compile Include="frminformearqueo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frminformeProductos.Designer.vb">
+      <DependentUpon>frminformeProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminformeProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmlistadoempleados.Designer.vb">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
     </Compile>
@@ -269,6 +275,9 @@
     <EmbeddedResource Include="frminformearqueo.resx">
       <DependentUpon>frminformearqueo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frminformeProductos.resx">
+      <DependentUpon>frminformeProductos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlistadoempleados.resx">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +291,7 @@
       <DependentUpon>frmProveedor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="infomearqueo.rdlc" />
+    <EmbeddedResource Include="informeProductos.rdlc" />
     <EmbeddedResource Include="listadoempleados.rdlc" />
     <EmbeddedResource Include="ListadoProveedores.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
