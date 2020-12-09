@@ -1,4 +1,11 @@
 ﻿Partial Class db_sistemaDataSet
+    Partial Public Class PreciosDataTable
+        Private Sub PreciosDataTable_PreciosRowChanging(sender As Object, e As PreciosRowChangeEvent) Handles Me.PreciosRowChanging
+
+        End Sub
+
+    End Class
+
     Partial Public Class GananciasDataTable
         Private Sub GananciasDataTable_GananciasRowChanging(sender As Object, e As GananciasRowChangeEvent) Handles Me.GananciasRowChanging
 
