@@ -152,6 +152,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Calculadora.db_sistemaDataSet.FormadepagoempDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Calculadora.db_sistemaDataSet.DataTable1DataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -208,6 +213,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Calculadora.db_sistemaDataSet.PreciosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSet.FormadepagoempRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -272,6 +282,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Calculadora.db_sistemaDataSet.FormadepagoempRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Calculadora.db_sistemaDataSet.DataTable1RowChangeEvent">
 <summary>
 Row event argument class
@@ -328,6 +343,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Calculadora.db_sistemaDataSetTableAdapters.PreciosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Calculadora.db_sistemaDataSetTableAdapters.FormadepagoempTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

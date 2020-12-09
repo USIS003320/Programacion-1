@@ -646,3 +646,6 @@ C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.xml
 C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.pdb
 C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.frmListadoPrecios.resources
+C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.frmListadoTelefonos.resources
+C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.frmListadodireccion.resources
+C:\Users\PC\Desktop\Nueva carpeta (25)\Calculadora\obj\Debug\Calculadora.frmFormadepagoemp.resources

@@ -1,0 +1,99 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmFormadepagoemp
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.FormadepagoempBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.db_sistemaDataSet = New Calculadora.db_sistemaDataSet()
+        Me.FormadepagoempTableAdapter = New Calculadora.db_sistemaDataSetTableAdapters.FormadepagoempTableAdapter()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ArqueoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ArqueoTableAdapter = New Calculadora.db_sistemaDataSetTableAdapters.ArqueoTableAdapter()
+        CType(Me.FormadepagoempBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.db_sistemaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArqueoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'FormadepagoempBindingSource
+        '
+        Me.FormadepagoempBindingSource.DataMember = "Formadepagoemp"
+        Me.FormadepagoempBindingSource.DataSource = Me.db_sistemaDataSet
+        '
+        'db_sistemaDataSet
+        '
+        Me.db_sistemaDataSet.DataSetName = "db_sistemaDataSet"
+        Me.db_sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'FormadepagoempTableAdapter
+        '
+        Me.FormadepagoempTableAdapter.ClearBeforeFill = True
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        ReportDataSource1.Name = "dsFormadepagoEmpleados"
+        ReportDataSource1.Value = Me.FormadepagoempBindingSource
+        ReportDataSource2.Name = "FormasdepagoEmpl"
+        ReportDataSource2.Value = Me.ArqueoBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Calculadora.FormadepagoEmp.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1198, 682)
+        Me.ReportViewer1.TabIndex = 3
+        '
+        'ArqueoBindingSource
+        '
+        Me.ArqueoBindingSource.DataMember = "Arqueo"
+        Me.ArqueoBindingSource.DataSource = Me.db_sistemaDataSet
+        '
+        'ArqueoTableAdapter
+        '
+        Me.ArqueoTableAdapter.ClearBeforeFill = True
+        '
+        'frmFormadepagoemp
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1198, 682)
+        Me.Controls.Add(Me.ReportViewer1)
+        Me.Name = "frmFormadepagoemp"
+        Me.Text = "frmFormadepagoemp"
+        CType(Me.FormadepagoempBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.db_sistemaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArqueoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents FormadepagoempBindingSource As BindingSource
+    Friend WithEvents db_sistemaDataSet As db_sistemaDataSet
+    Friend WithEvents FormadepagoempTableAdapter As db_sistemaDataSetTableAdapters.FormadepagoempTableAdapter
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents ArqueoBindingSource As BindingSource
+    Friend WithEvents ArqueoTableAdapter As db_sistemaDataSetTableAdapters.ArqueoTableAdapter
+End Class
