@@ -63,4 +63,22 @@
         objListadoPrecios.MdiParent = Me
         objListadoPrecios.Show()
     End Sub
+
+    Private Sub TelefonosDeEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TelefonosDeEmpleadosToolStripMenuItem.Click
+        Dim objListadoTelefonos As New frmListadoTelefonos
+        objListadoTelefonos.MdiParent = Me
+        objListadoTelefonos.Show()
+    End Sub
+
+    Private Sub DireccionDeEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DireccionDeEmpleadosToolStripMenuItem.Click
+        Dim objListadoDireccion As New frmListadodireccion
+        objListadoDireccion.MdiParent = Me
+        objListadoDireccion.Show()
+    End Sub
+
+    Private Sub FormaDePagoAEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FormaDePagoAEmpleadosToolStripMenuItem.Click
+        Dim objFormadepagoemp As New frmFormadepagoemp
+        objFormadepagoemp.MdiParent = Me
+        objFormadepagoemp.Show()
+    End Sub
 End Class

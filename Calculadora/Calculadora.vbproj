@@ -179,6 +179,12 @@
     <Compile Include="frmEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmFormadepagoemp.Designer.vb">
+      <DependentUpon>frmFormadepagoemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormadepagoemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGanancias.Designer.vb">
       <DependentUpon>frmGanancias.vb</DependentUpon>
     </Compile>
@@ -197,6 +203,12 @@
     <Compile Include="frminformeProductos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadodireccion.Designer.vb">
+      <DependentUpon>frmListadodireccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadodireccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmlistadoempleados.Designer.vb">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
     </Compile>
@@ -207,6 +219,12 @@
       <DependentUpon>frmListadoPrecios.vb</DependentUpon>
     </Compile>
     <Compile Include="frmListadoPrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoTelefonos.Designer.vb">
+      <DependentUpon>frmListadoTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoTelefonos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProductos.Designer.vb">
@@ -242,6 +260,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormadepagoEmp.rdlc" />
     <EmbeddedResource Include="Formprueba.resx">
       <DependentUpon>Formprueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +288,9 @@
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFormadepagoemp.resx">
+      <DependentUpon>frmFormadepagoemp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGanancias.resx">
       <DependentUpon>frmGanancias.vb</DependentUpon>
     </EmbeddedResource>
@@ -278,11 +300,17 @@
     <EmbeddedResource Include="frminformeProductos.resx">
       <DependentUpon>frminformeProductos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListadodireccion.resx">
+      <DependentUpon>frmListadodireccion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlistadoempleados.resx">
       <DependentUpon>frmlistadoempleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoPrecios.resx">
       <DependentUpon>frmListadoPrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoTelefonos.resx">
+      <DependentUpon>frmListadoTelefonos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
@@ -293,7 +321,9 @@
     <EmbeddedResource Include="infomearqueo.rdlc" />
     <EmbeddedResource Include="InformePrecio.rdlc" />
     <EmbeddedResource Include="informeProductos.rdlc" />
+    <EmbeddedResource Include="ListadoDireccion.rdlc" />
     <EmbeddedResource Include="listadoempleados.rdlc" />
+    <EmbeddedResource Include="ListaTelefonos.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
