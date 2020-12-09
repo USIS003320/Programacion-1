@@ -13,7 +13,7 @@
 
         cboCategoriaGanancias.DataSource = objConexion.obtenerDatos().Tables("Productos").DefaultView()
         cboCategoriaGanancias.DisplayMember = "producto"
-        cboCategoriaGanancias.ValueMember = "Productos.idProducto"
+        cboCategoriaGanancias.ValueMember = "Productos.IdProducto "
 
         mostrarDatos()
     End Sub
