@@ -45,21 +45,25 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "Ganancias")
 
-        miCommand.CommandText = "select * from compras"
+        miCommand.CommandText = "select * from cajapago"
         miAdapter.SelectCommand = miCommand
-        miAdapter.Fill(ds, "compras")
+        miAdapter.Fill(ds, "cajapago")
 
-        miCommand.CommandText = "select * from dcompras"
-        miAdapter.SelectCommand = miCommand
-        miAdapter.Fill(ds, "dcompras")
+        'miCommand.CommandText = "select * from compras"
+        'miAdapter.SelectCommand = miCommand
+        'miAdapter.Fill(ds, "compras")
 
-        miCommand.CommandText = "select * from pagos"
-        miAdapter.SelectCommand = miCommand
-        miAdapter.Fill(ds, "pagos")
+        'miCommand.CommandText = "select * from dcompras"
+        'miAdapter.SelectCommand = miCommand
+        'miAdapter.Fill(ds, "dcompras")
 
-        miCommand.CommandText = "select * from tipofactura"
-        miAdapter.SelectCommand = miCommand
-        miAdapter.Fill(ds, "tipofactura")
+        'miCommand.CommandText = "select * from pagos"
+        'miAdapter.SelectCommand = miCommand
+        'miAdapter.Fill(ds, "pagos")
+
+        'miCommand.CommandText = "select * from tipofactura"
+        'miAdapter.SelectCommand = miCommand
+        'miAdapter.Fill(ds, "tipofactura")
 
 
         Return ds
@@ -160,6 +164,23 @@ Public Class db_conexion
                 sql = "DELETE FROM compras WHERE idCompra='" + datos(0) + "'"
         End Select
         If executesql(sql) > 0 Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatoscajapago(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO cajapago (codigo,nombre,entradadepago,salidadepago) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "')"
+            Case "modificar"
+                sql = "UPDATE cajapago SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',entradadepago='" + datos(3) + "',salidadepago='" + datos(4) + "' WHERE idCajapago='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM cajapago WHERE idCajapago='" + datos(0) + "'"
+        End Select
+        If (executesql(sql) > 0) Then
             msg = "Accion terminada con exito"
         Else
             msg = "Fallo el proceso"

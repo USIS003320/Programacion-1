@@ -167,6 +167,12 @@
     <Compile Include="frmBuscarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmcajapago.Designer.vb">
+      <DependentUpon>frmcajapago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcajapago.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCompras.Designer.vb">
       <DependentUpon>frmCompras.vb</DependentUpon>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarProveedor.resx">
       <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcajapago.resx">
+      <DependentUpon>frmcajapago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCompras.resx">
       <DependentUpon>frmCompras.vb</DependentUpon>
