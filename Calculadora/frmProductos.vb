@@ -135,8 +135,4 @@
             mostrarDatos()
         End If
     End Sub
-
-    Private Sub cboCategoriaProducto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCategoriaProducto.SelectedIndexChanged
-
-    End Sub
 End Class
