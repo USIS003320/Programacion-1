@@ -337,7 +337,7 @@
     <EmbeddedResource Include="ListadoDireccion.rdlc" />
     <EmbeddedResource Include="listadoempleados.rdlc" />
     <EmbeddedResource Include="ListaTelefonos.rdlc" />
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Include="My Project\My.Resources">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
