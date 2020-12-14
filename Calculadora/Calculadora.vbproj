@@ -155,6 +155,12 @@
     <Compile Include="frmBuscarGanancias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBuscarPrecio.Designer.vb">
+      <DependentUpon>frmBuscarPrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBuscarProducto.Designer.vb">
       <DependentUpon>frmBuscarProducto.vb</DependentUpon>
     </Compile>
@@ -233,6 +239,12 @@
     <Compile Include="frmListadoTelefonos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPrecios.Designer.vb">
+      <DependentUpon>frmPrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPreciosPrductos.Designer.vb">
       <DependentUpon>frmPreciosPrductos.vb</DependentUpon>
     </Compile>
@@ -283,6 +295,9 @@
     <EmbeddedResource Include="frmBuscarGanancias.resx">
       <DependentUpon>frmBuscarGanancias.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPrecio.resx">
+      <DependentUpon>frmBuscarPrecio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarProducto.resx">
       <DependentUpon>frmBuscarProducto.vb</DependentUpon>
     </EmbeddedResource>
@@ -321,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoTelefonos.resx">
       <DependentUpon>frmListadoTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecios.resx">
+      <DependentUpon>frmPrecios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPreciosPrductos.resx">
       <DependentUpon>frmPreciosPrductos.vb</DependentUpon>

@@ -49,6 +49,10 @@ Public Class db_conexion
         miAdapter.SelectCommand = miCommand
         miAdapter.Fill(ds, "cajapago")
 
+        miCommand.CommandText = "select * from precios"
+        miAdapter.SelectCommand = miCommand
+        miAdapter.Fill(ds, "precios")
+
         'miCommand.CommandText = "select * from compras"
         'miAdapter.SelectCommand = miCommand
         'miAdapter.Fill(ds, "compras")
@@ -181,6 +185,23 @@ Public Class db_conexion
                 sql = "DELETE FROM cajapago WHERE idCajapago='" + datos(0) + "'"
         End Select
         If (executesql(sql) > 0) Then
+            msg = "Accion terminada con exito"
+        Else
+            msg = "Fallo el proceso"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosPrecios(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "Nuevo"
+                sql = "INSERT INTO Productos (idPrecios,nombre) VALUES('" + datos(1) + "','" + datos(2) + "')"
+            Case "modificar"
+                sql = "UPDATE Productos SET idPrecios='" + datos(1) + "',nombre='" + datos(2) + "',nombre='" + "' WHERE idProducto='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM Productos WHERE idPrecios='" + datos(0) + "'"
+        End Select
+        If executesql(sql) > 0 Then
             msg = "Accion terminada con exito"
         Else
             msg = "Fallo el proceso"

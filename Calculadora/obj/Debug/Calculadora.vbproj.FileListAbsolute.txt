@@ -774,3 +774,36 @@ C:\Users\famil\Desktop\Jose\Visual\Calculadora\obj\Debug\Calculadora.vbproj.Core
 C:\Users\famil\Desktop\Jose\Visual\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\famil\Desktop\Jose\Visual\Calculadora\obj\Debug\Calculadora.xml
 C:\Users\famil\Desktop\Jose\Visual\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.vbprojAssemblyReference.cache
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmMenu.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.Formprueba.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmArqueo.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarArque.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarEmpleados.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarGanancias.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarProducto.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarProveedor.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmcajapago.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmCompras.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmEmpleados.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmFormadepagoemp.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmGanancias.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frminformearqueo.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frminformeProductos.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmListadodireccion.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmlistadoempleados.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmListadoPrecios.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmListadoTelefonos.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmPreciosPrductos.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmProductos.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmProveedor.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.Resources.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.vbproj.GenerateResource.cache
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\RdlCompile.cache
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\RdlCompile.compiled
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.vbproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.xml
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmPrecios.resources
+C:\Users\PC\Desktop\Nueva carpeta (29)\Calculadora\obj\Debug\Calculadora.frmBuscarPrecio.resources
